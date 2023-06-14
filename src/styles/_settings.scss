@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@300&family=Raleway&display=swap");
+
+$font-1: "Raleway", sans-serif;
+$font-2: "Cormorant Upright", sans-serif;
+$font-3: "Maven Pro", sans-serif;
+$color-1: #dbeeee;
+$color-2: #3d9090;
+$color-3: #C4C4C4;
+$color-4: #E4D7B9;
+
+*, h1, h2, h3, h4, h5, h6{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  display: inline-block;
+}
+
+a {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
