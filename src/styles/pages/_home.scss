@@ -1,0 +1,32 @@
+.light-theme {
+  color: black;
+  background-color: white;
+}
+
+.dark-theme {
+  color: white;
+  background-color: black;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-top {
+  position: fixed;
+  font-size: 3rem;
+  left: 50%;
+  transform: translate(-50%, 0); // pour bien le centrer
+  svg {
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.7s ease;
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+}

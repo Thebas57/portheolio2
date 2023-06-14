@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import { FaAdjust } from "react-icons/fa";
 
-const Home = () => {
+const Home = ({theme, handleTheme}) => {
+
   return (
-    <div>Home</div>
-  )
-}
+    <div className={theme ? "light-theme home" : "dark-theme home"}>
+      <div className="btn-top">
+        <FaAdjust onClick={() => handleTheme()} />
+      </div>
+      Coucou c'est Théo
+    </div>
+  );
+};
 
-export default Home
+export default Home;

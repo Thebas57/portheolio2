@@ -7,16 +7,27 @@ $font-2: "Cormorant Upright", sans-serif;
 $font-3: "Maven Pro", sans-serif;
 $color-1: #dbeeee;
 $color-2: #3d9090;
-$color-3: #C4C4C4;
-$color-4: #E4D7B9;
+$color-3: #c4c4c4;
+$color-4: #e4d7b9;
 
-*, h1, h2, h3, h4, h5, h6{
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   display: inline-block;
 }
 
@@ -28,5 +39,7 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }

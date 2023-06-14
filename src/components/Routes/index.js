@@ -12,11 +12,11 @@ import Blog from "../../pages/Blog";
 import About from "../../pages/About";
 
 
-const index = () => {
+const index = ({theme, handleTheme}) => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home theme={theme} handleTheme={handleTheme}/>} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/works" element={<Works />} />
         <Route path="/blog" element={<Blog />} />
