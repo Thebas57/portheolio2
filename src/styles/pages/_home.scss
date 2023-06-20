@@ -6,6 +6,9 @@
 .dark-theme {
   color: white;
   background-color: black;
+  .line{
+    background-color: white !important;
+  }
 }
 
 .home {
@@ -29,4 +32,9 @@
       transform: rotate(180deg);
     }
   }
+}
+
+.logo {
+  font-family: $font-4;
+  font-size: 2rem;
 }
