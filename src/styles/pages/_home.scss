@@ -1,11 +1,13 @@
 .light-theme {
   color: black;
   background-color: white;
+  --color: black;
 }
 
 .dark-theme {
   color: white;
   background-color: black;
+  --color: white;
   .line {
     background-color: white !important;
   }

@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import Logo from "../components/Logo";
 import Socials from "../components/Socials";
+import Me from "../components/Me";
 
 const Home = ({ theme, handleTheme }) => {
   //Fonction pour envoyer un mail
@@ -50,6 +51,7 @@ const Home = ({ theme, handleTheme }) => {
         <FaChessBoard onClick={(e) => setClick(!click)} />
         <span>Clique ici</span>
       </div>
+      {click ? <Me click={click} /> : null}
     </div>
   );
 };
