@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaAdjust,
   FaChessBoard,
@@ -16,6 +16,8 @@ const Home = ({ theme, handleTheme }) => {
     const mailtoLink = `mailto:${emailAddress}`;
     window.location.href = mailtoLink;
   };
+
+  const [click, setClick] = useState(false);
   return (
     <div className={theme ? "light-theme home" : "dark-theme home"}>
       <div className="btn-top">
@@ -44,8 +46,8 @@ const Home = ({ theme, handleTheme }) => {
           <h4>Mes compétences</h4>
         </div>
       </div>
-      <div className="middle">
-        <FaChessBoard />
+      <div className={click ? "middle click" : "middle notClick"}>
+        <FaChessBoard onClick={(e) => setClick(!click)} />
         <span>Clique ici</span>
       </div>
     </div>

@@ -119,10 +119,11 @@
 .middle {
   font-size: 5rem;
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-90%, -90%);
+  transition: all 0.8s ease;
   svg {
+    cursor: pointer;
+    border: 3px solid;
     animation: rotate-infinite 10s infinite linear;
   }
   display: flex;
@@ -131,6 +132,26 @@
   span {
     padding-top: 40px;
     font-size: 1rem;
+  }
+}
+
+.click {
+  top: 87%;
+  left: 93%;
+  svg {
+    height: 1em;
+    width: 1em;
+  }
+  span{
+    display: none;
+  }
+}
+.notClick {
+  top: 50%;
+  left: 50%;
+  svg {
+    height: 1.5em;
+    width: 1.5em;
   }
 }
 
