@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  FaAdjust,
   FaChessBoard,
   FaChessKing,
   FaChessQueen,
@@ -9,6 +8,8 @@ import {
 import Logo from "../components/Logo";
 import Socials from "../components/Socials";
 import Me from "../components/Me";
+import { NavLink } from "react-router-dom";
+import SwitchTheme from "../components/SwitchTheme";
 
 const Home = ({ theme, handleTheme }) => {
   //Fonction pour envoyer un mail
@@ -21,9 +22,7 @@ const Home = ({ theme, handleTheme }) => {
   const [click, setClick] = useState(false);
   return (
     <div className={theme ? "light-theme home" : "dark-theme home"}>
-      <div className="btn-top">
-        <FaAdjust onClick={() => handleTheme()} />
-      </div>
+      <SwitchTheme handleTheme={handleTheme} />
       <Logo />
       <Socials />
       <div className="contact">
@@ -33,10 +32,12 @@ const Home = ({ theme, handleTheme }) => {
         <h4>Skills</h4>
         <FaChessRook />
       </div>
-      <div className="projets">
-        <h4>Projets</h4>
-        <FaChessRook />
-      </div>
+      <NavLink to="/works">
+        <div className="projets">
+          <h4>Projets</h4>
+          <FaChessRook />
+        </div>
+      </NavLink>
       <div className="moi">
         <div>
           <FaChessKing />
