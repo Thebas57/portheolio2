@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@300&family=Raleway&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Pacifico&family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Pacifico&family=Raleway&display=swap");
 
 $font-1: "Raleway", sans-serif;
 $font-2: "Cormorant Upright", sans-serif;
@@ -43,19 +43,20 @@ body {
   color: black;
   font-family: "Source Sans Pro", sans-serif;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .light-theme {
   color: black;
   background-color: white;
   --color: black;
+  --back-color: white;
 }
 
 .dark-theme {
   color: white;
   background-color: black;
   --color: white;
+  --back-color: black;
   .line {
     background-color: white !important;
   }

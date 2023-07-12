@@ -1,13 +1,12 @@
-
 // Pour garder la bonne couleur sur les navlinks
-a{
+a {
   color: inherit;
 }
 
 .home {
   width: 100vw;
-  height: 100vh;
-  padding: 2rem;
+  height: 96vh;
+  padding: 2rem 2rem 0 2rem;
   position: relative;
   overflow: hidden;
 }
@@ -16,7 +15,8 @@ a{
   position: fixed;
   font-size: 3rem;
   left: 50%;
-  transform: translate(-50%, 0); // pour bien le centrer
+  transform: translate(-54%, 0); // pour bien le centrer
+  z-index: 10;
   svg {
     cursor: pointer;
     transform: rotate(0deg);
@@ -88,7 +88,7 @@ a{
 
 .moi {
   position: absolute;
-  bottom: 5rem;
+  bottom: 2rem;
   width: 100vw;
   letter-spacing: 0.7px;
   font-family: $font-1;
@@ -130,7 +130,7 @@ a{
 }
 
 .click {
-  top: 87%;
+  top: 93%;
   left: 93%;
   svg {
     height: 1em;
@@ -141,7 +141,7 @@ a{
   }
 }
 .notClick {
-  top: 50%;
+  top: 56%;
   left: 50%;
   svg {
     height: 1.5em;
@@ -167,6 +167,9 @@ a{
   }
 }
 
-.contact h4, .skills h4, .projets h4, .moi >div h4{
+.contact h4,
+.skills h4,
+.projets h4,
+.moi > div h4 {
   transition: all 0.3s ease-out;
 }
