@@ -144,7 +144,7 @@
     height: 1em;
     width: 1em;
   }
-  span{
+  span {
     display: none;
   }
 }
@@ -164,4 +164,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.contact:hover,
+.skills:hover,
+.projets:hover,
+.moi > div:hover {
+  h4 {
+    font-size: 1.1rem;
+  }
+}
+
+.contact h4, .skills h4, .projets h4, .moi >div h4{
+  transition: all 0.3s ease-out;
 }
