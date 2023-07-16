@@ -101,9 +101,14 @@
         font-size: 1.1rem;
       }
     }
-    .langage{
+    .langage {
       font-size: 1rem !important;
       font-style: italic;
+    }
+    &:hover {
+      background-color: var(--back-color);
+      color: var(--color);
+      transition: all 0.3s ease;
     }
   }
 }
