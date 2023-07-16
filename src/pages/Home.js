@@ -28,10 +28,12 @@ const Home = ({ theme, handleTheme }) => {
       <div className="contact">
         <h4 onClick={handleMailClick}>Contacte moi</h4>
       </div>
-      <div className="skills">
-        <h4>Skills</h4>
-        <FaChessRook />
-      </div>
+      <NavLink to="/skills">
+        <div className="skills">
+          <h4>Skills</h4>
+          <FaChessRook />
+        </div>
+      </NavLink>
       <NavLink to="/works">
         <div className="projets">
           <h4>Projets</h4>
@@ -44,8 +46,12 @@ const Home = ({ theme, handleTheme }) => {
           <h4>A propos de moi</h4>
         </div>
         <div>
-          <FaChessQueen />
-          <h4>Mes compétences</h4>
+          <NavLink to="/skills">
+            <div>
+              <FaChessQueen />
+              <h4>Mes compétences</h4>
+            </div>
+          </NavLink>
         </div>
       </div>
       <div className={click ? "middle click" : "middle notClick"}>

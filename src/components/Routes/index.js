@@ -19,7 +19,7 @@ const index = ({ theme, handleTheme }) => {
           path="/"
           element={<Home theme={theme} handleTheme={handleTheme} />}
         />
-        <Route path="/skills" element={<Skills />} />
+        <Route path="/skills" element={<Skills theme={theme} handleTheme={handleTheme} />} />
         <Route
           path="/works"
           element={<Works theme={theme} handleTheme={handleTheme} />}
