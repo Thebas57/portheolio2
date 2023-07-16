@@ -20,6 +20,7 @@ const Home = ({ theme, handleTheme }) => {
   };
 
   const [click, setClick] = useState(false);
+
   return (
     <div className={theme ? "light-theme home" : "dark-theme home"}>
       <SwitchTheme handleTheme={handleTheme} />
