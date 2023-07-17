@@ -52,7 +52,7 @@ const Cursor = () => {
     console.log("AnimeCircle");
   });
 
-  return <div id="trail-cursor" data-circle="10"></div>;
+  return <div id="trail-cursor" data-circle="1"></div>;
 };
 
 export default Cursor;

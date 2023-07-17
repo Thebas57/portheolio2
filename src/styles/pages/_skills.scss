@@ -19,13 +19,23 @@
     border: 2px solid var(--back-color);
     padding: 1rem;
     line-height: 1.5;
-    font-family: "Ubuntu Mono", monospace;
+    font-family: $font-5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    svg{
+      font-size: 2rem;
+      margin-right: 5px;
+    }
     .titre {
       display: flex;
       justify-content: center;
+      align-items: center;
+      div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
     h1 {
       margin: auto;
@@ -42,6 +52,11 @@
         margin-left: 2rem;
         font-size: 1.4rem;
       }
+    }
+    &:hover{
+      background-color: var(--back-color);
+      color: var(--color);
+      transition: all 0.2s;
     }
   }
 }
