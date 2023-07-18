@@ -14,7 +14,7 @@ const Skills = ({ theme, handleTheme }) => {
       className={theme ? "light-theme skills-page" : "dark-theme skills-page"}
     >
       <SwitchTheme handleTheme={handleTheme} />
-      <Particle />
+      <Particle handleTheme={handleTheme} theme={theme} />
       <Logo />
       <Socials />
       <NavLink className="back" to="/">
