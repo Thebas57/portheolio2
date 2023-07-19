@@ -1,0 +1,57 @@
+.about-page {
+  height: 96vh;
+  width: 100vw;
+  padding: 2rem 2rem 0 2rem;
+  position: relative;
+  background-color: var(--back-color);
+  color: var(--color);
+  .piano {
+    //width: 22%;
+    font-size: 20rem;
+    right: 10%;
+    top: 20%;
+    position: absolute;
+    animation: bounce 4s ease infinite;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(100px) translateX(30px);
+  }
+}
+
+.back {
+  position: fixed;
+  top: 45vh;
+  font-size: 2rem;
+  transition: all 0.2s ease;
+  z-index: 5;
+  &:hover {
+    font-size: 2.2rem;
+  }
+}
+
+.about-container {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  .about-theo {
+    display: flex;
+    border: 2px solid var(--color);
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 45vw;
+    height: 65vh;
+    margin-left: 10vw;
+    line-height: 1.5;
+    font-family: $font-5;
+    font-size: 1.4rem;
+  }
+}

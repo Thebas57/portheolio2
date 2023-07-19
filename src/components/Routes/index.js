@@ -28,7 +28,10 @@ const index = ({ theme, handleTheme }) => {
           element={<Works theme={theme} handleTheme={handleTheme} />}
         />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/about" element={<About />} />
+        <Route
+          path="/about"
+          element={<About theme={theme} handleTheme={handleTheme} />}
+        />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>

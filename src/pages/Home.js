@@ -43,8 +43,12 @@ const Home = ({ theme, handleTheme }) => {
       </NavLink>
       <div className="moi">
         <div>
-          <FaChessKing />
-          <h4>A propos de moi</h4>
+          <NavLink to="/about">
+            <div>
+              <FaChessKing />
+              <h4>A propos de moi</h4>
+            </div>
+          </NavLink>
         </div>
         <div>
           <NavLink to="/skills">
