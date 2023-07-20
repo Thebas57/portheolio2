@@ -51,10 +51,10 @@ const Home = ({ theme, handleTheme }) => {
           </NavLink>
         </div>
         <div>
-          <NavLink to="/skills">
+          <NavLink to="/pro">
             <div>
               <FaChessQueen />
-              <h4>Mes compétences</h4>
+              <h4>Professionalisation</h4>
             </div>
           </NavLink>
         </div>

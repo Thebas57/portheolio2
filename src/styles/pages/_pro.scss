@@ -1,0 +1,88 @@
+.pro-page {
+  height: 96vh;
+  padding: 2rem 2rem 0 2rem;
+  position: relative;
+  background-color: var(--back-color);
+  color: var(--color);
+  overflow-x: scroll !important;
+}
+
+.back {
+  position: fixed;
+  top: 45vh;
+  font-size: 2rem;
+  transition: all 0.2s ease;
+  z-index: 5;
+  &:hover {
+    font-size: 2.2rem;
+  }
+}
+
+.pro-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 18vw;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.card {
+  position: relative;
+  height: 25vh;
+  border: 1px solid var(--color);
+  width: 19rem;
+  margin-right: 10rem;
+  border-radius: 0 50px 0 50px;
+  background-color: var(--color);
+  color: var(--back-color);
+  transition: all 0.7s ease;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-1;
+  perspective: 1000px; /* Ajout de la perspective pour l'effet 3D */
+  transform-style: preserve-3d; /* Permet à l'élément d'afficher les éléments 3D enfants en 3D */
+  transition-delay: 0.2s; /* Ajoutez un délai de 0.2s avant que l'effet de retournement ne se produise */
+  &:hover {
+    background-color: var(--back-color);
+    color: var(--color);
+    cursor: pointer;
+  }
+}
+
+.card .front,
+.card .backcard {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.card .backcard {
+  transform: rotateY(180deg);
+}
+
+.back-content {
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  hr{
+    width: 80%;
+  }
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}

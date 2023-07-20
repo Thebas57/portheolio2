@@ -8,7 +8,7 @@ import {
 import Home from "../../pages/Home";
 import Skills from "../../pages/Skills";
 import Works from "../../pages/Works";
-import Blog from "../../pages/Blog";
+import Pro from "../../pages/Pro";
 import About from "../../pages/About";
 
 const index = ({ theme, handleTheme }) => {
@@ -27,7 +27,7 @@ const index = ({ theme, handleTheme }) => {
           path="/works"
           element={<Works theme={theme} handleTheme={handleTheme} />}
         />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/pro" element={<Pro theme={theme} handleTheme={handleTheme} />} />
         <Route
           path="/about"
           element={<About theme={theme} handleTheme={handleTheme} />}
