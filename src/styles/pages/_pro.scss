@@ -78,11 +78,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  hr{
+  hr {
     width: 80%;
   }
 }
 
 .card:hover {
   transform: rotateY(180deg);
+}
+
+.yinyang-container {
+  fill: var(--color) !important;
+}
+
+.yinyang {
+  position: fixed;
+  transition: 0.3s all ease;
+  bottom: 2rem;
+  right: 2rem;
+  width: 100px;
 }
