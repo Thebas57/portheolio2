@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import SwitchTheme from "../components/SwitchTheme";
 import Logo from "../components/Logo";
 import Socials from "../components/Socials";
@@ -7,8 +7,35 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 import Card from "../components/Card";
 
 const Pro = ({ theme, handleTheme }) => {
+  const ref = useRef(null);
+  useEffect(() => {
+    // Fonction pour détecter l'événement de défilement de la souris
+    function handleMouseWheel(event) {
+      // Empêcher le défilement vertical par défaut
+      event.preventDefault();
+
+      // Ajuster la position de défilement horizontal en fonction de la valeur de défilement de la souris
+      const delta = event.deltaY;
+      if (delta > 0) {
+        // Si la direction est positive (vers la droite), faire défiler la page vers la droite
+        ref.current.scrollLeft += 80;
+      } else if (delta < 0) {
+        // Si la direction est négative (vers la gauche), faire défiler la page vers la gauche
+        ref.current.scrollLeft -= 80;
+      }
+    }
+
+    // Ajouter l'écouteur d'événement pour le défilement de la souris
+    if (window.addEventListener)
+      // Pour les navigateurs modernes
+      window.addEventListener("wheel", handleMouseWheel, { passive: false });
+  });
+
   return (
-    <div className={theme ? "light-theme pro-page" : "dark-theme pro-page"}>
+    <div
+      className={theme ? "light-theme pro-page" : "dark-theme pro-page"}
+      ref={ref}
+    >
       <SwitchTheme handleTheme={handleTheme} />
       <Logo />
       <Socials />
