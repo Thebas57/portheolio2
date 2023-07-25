@@ -5,6 +5,7 @@ import Socials from "../components/Socials";
 import { NavLink } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import Card from "../components/Card";
+import BigTitle from "../components/BigTitle";
 
 const Pro = ({ theme, handleTheme }) => {
   const ref = useRef(null);
@@ -56,6 +57,7 @@ const Pro = ({ theme, handleTheme }) => {
       <NavLink className="back" to="/">
         <FaArrowCircleLeft />
       </NavLink>
+      <BigTitle title="PRO" />
       <div className="yinyang-container">
         <svg
           aria-hidden="true"

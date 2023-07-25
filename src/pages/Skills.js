@@ -7,6 +7,7 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { MdDeveloperMode } from "react-icons/md";
 import Particle from "../components/Particle";
+import BigTitle from "../components/BigTitle";
 
 const Skills = ({ theme, handleTheme }) => {
   return (
@@ -20,6 +21,7 @@ const Skills = ({ theme, handleTheme }) => {
       <NavLink className="back" to="/">
         <FaArrowCircleLeft />
       </NavLink>
+      <BigTitle title="SKILLS" />
       <div className="skills-container">
         <div className="skill">
           <div className="titre">

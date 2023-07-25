@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { GiGrandPiano } from "react-icons/gi";
 import PianoParticle from "../components/PianoParticle";
+import BigTitle from "../components/BigTitle";
 
 const About = ({ theme, handleTheme }) => {
   return (
@@ -18,6 +19,7 @@ const About = ({ theme, handleTheme }) => {
         <FaArrowCircleLeft />
       </NavLink>
       <GiGrandPiano className="piano" />
+      <BigTitle title="ABOUT" />
       <div className="about-container">
         <div className="about-theo">
           <div>

@@ -10,6 +10,7 @@ import Socials from "../components/Socials";
 import Me from "../components/Me";
 import { NavLink } from "react-router-dom";
 import SwitchTheme from "../components/SwitchTheme";
+import BigTitle from "../components/BigTitle";
 
 const Home = ({ theme, handleTheme }) => {
   //Fonction pour envoyer un mail
@@ -26,6 +27,7 @@ const Home = ({ theme, handleTheme }) => {
       <SwitchTheme handleTheme={handleTheme} />
       <Logo />
       <Socials />
+      <BigTitle title="HOME" />
       <div className="contact">
         <h4 onClick={handleMailClick}>Contacte moi</h4>
       </div>

@@ -5,6 +5,7 @@ import Socials from "../components/Socials";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import AncreScroll from "../components/AncreScroll";
+import BigTitle from "../components/BigTitle";
 
 const Works = ({ theme, handleTheme }) => {
   const [numbers, setNumbers] = useState(0);
@@ -23,6 +24,7 @@ const Works = ({ theme, handleTheme }) => {
       <NavLink className="back" to="/">
         <FaArrowCircleLeft />
       </NavLink>
+      <BigTitle title="WORKS" />
       <div className="filter">
         <div>Filter 1</div>
         <div>Filter 2</div>
