@@ -28,7 +28,9 @@ const Pro = ({ theme, handleTheme }) => {
     // Ajouter l'écouteur d'événement pour le défilement de la souris
     if (window.addEventListener)
       // Pour les navigateurs modernes
-      window.addEventListener("wheel", handleMouseWheel, { passive: false });
+      window.addEventListener("wheel", handleMouseWheel);
+
+    return () => window.removeEventListener("wheel", handleMouseWheel);
   });
 
   return (
