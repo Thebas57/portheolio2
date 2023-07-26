@@ -40,7 +40,13 @@ const Works = ({ theme, handleTheme }) => {
   }, []);
 
   return (
-    <div className={theme ? "light-theme works" : "dark-theme works"}>
+    <motion.div
+      className={theme ? "light-theme works" : "dark-theme works"}
+      initial={{ x: "-100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "-100%" }}
+      transition={{ duration: 0.6 }}
+    >
       <SwitchTheme handleTheme={handleTheme} />
       <Logo />
       <Socials />
@@ -141,7 +147,7 @@ const Works = ({ theme, handleTheme }) => {
           </div>
         </motion.div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

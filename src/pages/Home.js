@@ -24,7 +24,13 @@ const Home = ({ theme, handleTheme }) => {
   const [click, setClick] = useState(false);
 
   return (
-    <div className={theme ? "light-theme home" : "dark-theme home"}>
+    <motion.div
+      className={theme ? "light-theme home" : "dark-theme home"}
+      initial={{ opacity:0 }}
+      animate={{ opacity:1 }}
+      exit={{ opacity:0 }}
+      transition={{ duration: 0.6 }}
+    >
       <SwitchTheme handleTheme={handleTheme} />
       <Logo />
       <Socials />
@@ -119,7 +125,7 @@ const Home = ({ theme, handleTheme }) => {
         <span>Clique ici</span>
       </div>
       {click ? <Me click={click} /> : null}
-    </div>
+    </motion.div>
   );
 };
 

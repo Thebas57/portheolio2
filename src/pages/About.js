@@ -7,10 +7,17 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 import { GiGrandPiano } from "react-icons/gi";
 import PianoParticle from "../components/PianoParticle";
 import BigTitle from "../components/BigTitle";
+import { motion } from "framer-motion";
 
 const About = ({ theme, handleTheme }) => {
   return (
-    <div className={theme ? "light-theme about-page" : "dark-theme about-page"}>
+    <motion.div
+      className={theme ? "light-theme about-page" : "dark-theme about-page"}
+      initial={{ y: "100%" }}
+      animate={{ y: 0 }}
+      exit={{ y: "100%" }}
+      transition={{ duration: 0.6 }}
+    >
       <SwitchTheme handleTheme={handleTheme} />
       <PianoParticle handleTheme={handleTheme} theme={theme} />
       <Logo />
@@ -42,7 +49,7 @@ const About = ({ theme, handleTheme }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

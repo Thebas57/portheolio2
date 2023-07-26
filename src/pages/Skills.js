@@ -8,11 +8,16 @@ import { GiSkills } from "react-icons/gi";
 import { MdDeveloperMode } from "react-icons/md";
 import Particle from "../components/Particle";
 import BigTitle from "../components/BigTitle";
+import { motion } from "framer-motion";
 
 const Skills = ({ theme, handleTheme }) => {
   return (
-    <div
+    <motion.div
       className={theme ? "light-theme skills-page" : "dark-theme skills-page"}
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "100%" }}
+      transition={{ duration: 0.6 }}
     >
       <SwitchTheme handleTheme={handleTheme} />
       <Particle handleTheme={handleTheme} theme={theme} />
@@ -81,7 +86,7 @@ const Skills = ({ theme, handleTheme }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
