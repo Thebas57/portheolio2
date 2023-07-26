@@ -3,11 +3,6 @@
   height: 100%;
   padding: 2rem;
   position: relative;
-  background-image: var(--url-img);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   &::before {
     content: "";
     position: absolute;
@@ -40,8 +35,8 @@
   align-items: center;
   flex-direction: row;
   border-radius: 10px;
-  border: 2px solid var(--back-color);
-  background-color: var(--color);
+  border: 2px solid var(--color);
+  background-color: var(--back-color);
   z-index: 10;
   div {
     flex: 1;
@@ -49,16 +44,16 @@
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    color: var(--back-color);
+    color: var(--color);
     cursor: pointer;
     height: 100%;
     transition: all 0.2s ease;
     &:not(:last-child) {
-      border-right: 2px solid var(--back-color);
+      border-right: 2px solid var(--color);
     }
     &:hover {
-      background-color: var(--back-color);
-      color: var(--color);
+      background-color: var(--color);
+      color: var(--back-color);
     }
   }
 }
@@ -78,7 +73,8 @@
     width: 38%;
     padding: 1rem;
     height: 20rem;
-    border: 2px solid black;
+    border: 2px solid var(--color);
+    z-index: 5;
     .img-projet {
       height: 50%;
       width: 100%;
@@ -94,7 +90,7 @@
       margin-bottom: 1rem;
     }
     .content-projet {
-      border-top: 2px solid black;
+      border-top: 2px solid var(--color);
       p {
         margin-top: 1rem;
         font-size: 1.1rem;
@@ -105,9 +101,12 @@
       font-style: italic;
     }
     &:hover {
-      background-color: var(--back-color);
-      color: var(--color);
+      background-color: var(--color);
+      color: var(--back-color);
       transition: all 0.3s ease;
+      .content-projet {
+        border-top: 2px solid var(--back-color);
+      }
     }
   }
 }

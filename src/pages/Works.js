@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import AncreScroll from "../components/AncreScroll";
 import BigTitle from "../components/BigTitle";
 import { motion } from "framer-motion";
+import PianoParticle from "../components/PianoParticle";
 
 const Works = ({ theme, handleTheme }) => {
   //Pour framer motion
@@ -41,112 +42,112 @@ const Works = ({ theme, handleTheme }) => {
 
   return (
     <motion.div
-      className={theme ? "light-theme works" : "dark-theme works"}
       initial={{ x: "-100%" }}
       animate={{ x: 0 }}
       exit={{ x: "-100%" }}
       transition={{ duration: 0.6 }}
+      className={theme ? "light-theme works-page" : "dark-theme works-page"}
     >
-      <SwitchTheme handleTheme={handleTheme} />
-      <Logo />
-      <Socials />
-      <AncreScroll numbers={numbers} />
-      <NavLink className="back" to="/">
-        <FaArrowCircleLeft />
-      </NavLink>
-      <BigTitle title="WORKS" />
-      <div className="filter">
-        <div>Filter 1</div>
-        <div>Filter 2</div>
-        <div>Filter 3</div>
+      <div className={theme ? "light-theme works" : "dark-theme works"}>
+        <SwitchTheme handleTheme={handleTheme} />
+        <PianoParticle handleTheme={handleTheme} theme={theme} />
+        <Logo />
+        <Socials />
+        <AncreScroll numbers={numbers} />
+        <NavLink className="back" to="/">
+          <FaArrowCircleLeft />
+        </NavLink>
+        <BigTitle title="WORKS" />
+        <div className="filter">
+          <div>Filter 1</div>
+          <div>Filter 2</div>
+          <div>Filter 3</div>
+        </div>
+        <motion.div variants={container} initial="hidden" animate="show">
+          <div className="container-projets">
+            <motion.div className="projet" variants={Item}>
+              <div className="img-projet">
+                <img src="./img/chesscircle.png" alt="img" />
+              </div>
+              <h3>Titre du Bloc</h3>
+              <div className="content-projet">
+                <p>Description du Bloc</p>
+                <p className="langage">#ReactJs #Php</p>
+              </div>
+            </motion.div>
+            <motion.div className="projet" variants={Item}>
+              <div className="img-projet">
+                <img src="./img/chesscircle.png" alt="img" />
+              </div>
+              <h3>Titre du Bloc</h3>
+              <div className="content-projet">
+                <p>Description du Bloc</p>
+                <p className="langage">#ReactJs #Php</p>
+              </div>
+            </motion.div>{" "}
+            <motion.div className="projet" variants={Item}>
+              <div className="img-projet">
+                <img src="./img/chesscircle.png" alt="img" />
+              </div>
+              <h3>Titre du Bloc</h3>
+              <div className="content-projet">
+                <p>Description du Bloc</p>
+                <p className="langage">#ReactJs #Php</p>
+              </div>
+            </motion.div>{" "}
+            <motion.div className="projet" variants={Item}>
+              <div className="img-projet">
+                <img src="./img/chesscircle.png" alt="img" />
+              </div>
+              <h3>Titre du Bloc</h3>
+              <div className="content-projet">
+                <p>Description du Bloc</p>
+                <p className="langage">#ReactJs #Php</p>
+              </div>
+            </motion.div>{" "}
+            <motion.div className="projet" variants={Item}>
+              <div className="img-projet">
+                <img src="./img/chesscircle.png" alt="img" />
+              </div>
+              <h3>Titre du Bloc</h3>
+              <div className="content-projet">
+                <p>Description du Bloc</p>
+                <p className="langage">#ReactJs #Php</p>
+              </div>
+            </motion.div>{" "}
+            <motion.div className="projet" variants={Item}>
+              <div className="img-projet">
+                <img src="./img/chesscircle.png" alt="img" />
+              </div>
+              <h3>Titre du Bloc</h3>
+              <div className="content-projet">
+                <p>Description du Bloc</p>
+                <p className="langage">#ReactJs #Php</p>
+              </div>
+            </motion.div>{" "}
+            <motion.div className="projet" variants={Item}>
+              <div className="img-projet">
+                <img src="./img/chesscircle.png" alt="img" />
+              </div>
+              <h3>Titre du Bloc</h3>
+              <div className="content-projet">
+                <p>Description du Bloc</p>
+                <p className="langage">#ReactJs #Php</p>
+              </div>
+            </motion.div>{" "}
+            <motion.div className="projet" variants={Item}>
+              <div className="img-projet">
+                <img src="./img/chesscircle.png" alt="img" />
+              </div>
+              <h3>Titre du Bloc</h3>
+              <div className="content-projet">
+                <p>Description du Bloc</p>
+                <p className="langage">#ReactJs #Php</p>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
       </div>
-      <motion.div
-        className="container-projets"
-        variants={container}
-        initial="hidden"
-        animate="show"
-      >
-        <motion.div className="projet" variants={Item}>
-          <div className="img-projet">
-            <img src="./img/chesscircle.png" alt="img" />
-          </div>
-          <h3>Titre du Bloc</h3>
-          <div className="content-projet">
-            <p>Description du Bloc</p>
-            <p className="langage">#ReactJs #Php</p>
-          </div>
-        </motion.div>
-        <motion.div className="projet" variants={Item}>
-          <div className="img-projet">
-            <img src="./img/chesscircle.png" alt="img" />
-          </div>
-          <h3>Titre du Bloc</h3>
-          <div className="content-projet">
-            <p>Description du Bloc</p>
-            <p className="langage">#ReactJs #Php</p>
-          </div>
-        </motion.div>{" "}
-        <motion.div className="projet" variants={Item}>
-          <div className="img-projet">
-            <img src="./img/chesscircle.png" alt="img" />
-          </div>
-          <h3>Titre du Bloc</h3>
-          <div className="content-projet">
-            <p>Description du Bloc</p>
-            <p className="langage">#ReactJs #Php</p>
-          </div>
-        </motion.div>{" "}
-        <motion.div className="projet" variants={Item}>
-          <div className="img-projet">
-            <img src="./img/chesscircle.png" alt="img" />
-          </div>
-          <h3>Titre du Bloc</h3>
-          <div className="content-projet">
-            <p>Description du Bloc</p>
-            <p className="langage">#ReactJs #Php</p>
-          </div>
-        </motion.div>{" "}
-        <motion.div className="projet" variants={Item}>
-          <div className="img-projet">
-            <img src="./img/chesscircle.png" alt="img" />
-          </div>
-          <h3>Titre du Bloc</h3>
-          <div className="content-projet">
-            <p>Description du Bloc</p>
-            <p className="langage">#ReactJs #Php</p>
-          </div>
-        </motion.div>{" "}
-        <motion.div className="projet" variants={Item}>
-          <div className="img-projet">
-            <img src="./img/chesscircle.png" alt="img" />
-          </div>
-          <h3>Titre du Bloc</h3>
-          <div className="content-projet">
-            <p>Description du Bloc</p>
-            <p className="langage">#ReactJs #Php</p>
-          </div>
-        </motion.div>{" "}
-        <motion.div className="projet" variants={Item}>
-          <div className="img-projet">
-            <img src="./img/chesscircle.png" alt="img" />
-          </div>
-          <h3>Titre du Bloc</h3>
-          <div className="content-projet">
-            <p>Description du Bloc</p>
-            <p className="langage">#ReactJs #Php</p>
-          </div>
-        </motion.div>{" "}
-        <motion.div className="projet" variants={Item}>
-          <div className="img-projet">
-            <img src="./img/chesscircle.png" alt="img" />
-          </div>
-          <h3>Titre du Bloc</h3>
-          <div className="content-projet">
-            <p>Description du Bloc</p>
-            <p className="langage">#ReactJs #Php</p>
-          </div>
-        </motion.div>
-      </motion.div>
     </motion.div>
   );
 };
