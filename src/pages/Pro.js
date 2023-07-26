@@ -4,7 +4,6 @@ import Logo from "../components/Logo";
 import Socials from "../components/Socials";
 import { NavLink } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
-import Card from "../components/Card";
 import BigTitle from "../components/BigTitle";
 import { motion } from "framer-motion";
 
