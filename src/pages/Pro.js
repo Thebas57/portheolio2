@@ -6,8 +6,32 @@ import { NavLink } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import Card from "../components/Card";
 import BigTitle from "../components/BigTitle";
+import { motion } from "framer-motion";
 
 const Pro = ({ theme, handleTheme }) => {
+  //Pour framer motion
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5,
+        duration: 0.5,
+      },
+    },
+  };
+  const Item = {
+    hidden: {
+      scale: 0,
+    },
+    show: {
+      scale: 1,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      },
+    },
+  };
   const ref = useRef(null);
   const refYy = useRef(null);
   useEffect(() => {
@@ -71,8 +95,13 @@ const Pro = ({ theme, handleTheme }) => {
           <path d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 376c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm0-128c-53.02 0-96 42.98-96 96s42.98 96 96 96c-106.04 0-192-85.96-192-192S141.96 64 248 64c53.02 0 96 42.98 96 96s-42.98 96-96 96zm0-128c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32z" />
         </svg>
       </div>
-      <div className="pro-container pro-container-wrapper">
-        <div className="card">
+      <motion.div
+        className="pro-container pro-container-wrapper"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
+        <motion.div className="card" variants={Item}>
           <div className="front">
             <h1>Expérience pro</h1>
             <h3>2018-2020</h3>
@@ -94,8 +123,8 @@ const Pro = ({ theme, handleTheme }) => {
               </p>
             </div>
           </div>
-        </div>{" "}
-        <div className="card">
+        </motion.div>{" "}
+        <motion.div className="card" variants={Item}>
           <div className="front">
             <h1>Diplôme</h1>
             <h3>2018</h3>
@@ -103,7 +132,7 @@ const Pro = ({ theme, handleTheme }) => {
           <div className="backcard">
             <h1>Coucou</h1>
           </div>
-        </div>{" "}
+        </motion.div>{" "}
         <div className="card">
           <div className="front">
             <h1>Expérience pro</h1>
@@ -160,7 +189,7 @@ const Pro = ({ theme, handleTheme }) => {
             <p>Coucou</p>
           </div>
         </div>{" "}
-      </div>
+      </motion.div>
     </div>
   );
 };
