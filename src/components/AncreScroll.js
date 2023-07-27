@@ -6,9 +6,10 @@ const AncreScroll = (props) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      let scrollPosition = window.pageYOffset;
-      let windowSize = window.innerHeight;
-      let bodyHeight = document.body.offsetHeight;
+      let test = document.getElementById("test");
+      let scrollPosition = test.scrollTop;
+      let windowSize = test.clientHeight;
+      let bodyHeight = test.scrollHeight;
 
       let diff = Math.max(bodyHeight - (scrollPosition + windowSize));
       let diffP = (diff * 100) / (bodyHeight - windowSize);
@@ -17,24 +18,19 @@ const AncreScroll = (props) => {
 
       if (scrollPosition > 5) hiddenRef.current.style.display = "none";
       else hiddenRef.current.style.display = "block";
+
+      console.log(scrollPosition, windowSize, bodyHeight);
     };
 
-    window.addEventListener("scroll", handleScroll);
-
-    console.log(props.numbers)
+    test.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  }, []);
 
   return (
     <div className="ancre-container">
       <div className="preAncre hidden" ref={hiddenRef}>
-        <img
-          src="./svg/ancre.svg"
-          alt="ancre"
-          width={70}
-          height={70}
-        />
+        <img src="./svg/ancre.svg" alt="ancre" width={70} height={70} />
       </div>
       <div className="slide" ref={ref}>
         {[...Array(props.numbers)].map((x, id) => {
@@ -42,7 +38,7 @@ const AncreScroll = (props) => {
             <img
               src="./svg/chaine.svg"
               alt={id}
-              key={x}
+              key={id}
               width={25}
               height={25}
               className="chaine"

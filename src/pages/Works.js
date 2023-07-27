@@ -48,23 +48,27 @@ const Works = ({ theme, handleTheme }) => {
       transition={{ duration: 0.6 }}
       className={theme ? "light-theme works-page" : "dark-theme works-page"}
     >
-      <div className={theme ? "light-theme works" : "dark-theme works"}>
+      <div className={theme ? "light-theme works" : "dark-theme works"} id="test">
         <SwitchTheme handleTheme={handleTheme} />
-        <PianoParticle handleTheme={handleTheme} theme={theme} />
         <Logo />
         <Socials />
-        <AncreScroll numbers={numbers} />
         <NavLink className="back" to="/">
           <FaArrowCircleLeft />
         </NavLink>
+        <AncreScroll numbers={numbers} />
         <BigTitle title="WORKS" />
         <div className="filter">
           <div>Filter 1</div>
           <div>Filter 2</div>
           <div>Filter 3</div>
         </div>
-        <motion.div variants={container} initial="hidden" animate="show">
-          <div className="container-projets">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="center"
+        >
+          <div className="grid">
             <motion.div className="projet" variants={Item}>
               <div className="img-projet">
                 <img src="./img/chesscircle.png" alt="img" />

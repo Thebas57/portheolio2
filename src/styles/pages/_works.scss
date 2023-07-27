@@ -1,16 +1,26 @@
-.works {
+.works-page {
   width: 100vw;
-  height: 100%;
-  padding: 2rem;
+}
+
+.works {
+  overflow-y: scroll !important;
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  height: 100vh;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12rem;
+  padding-left: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
+  grid-gap: calc(1rem + 2vw);
 }
 
 .back {
@@ -25,8 +35,8 @@
 
 .filter {
   position: absolute;
-  top: 10%;
-  left: 48%;
+  top: 14%;
+  left: 50%;
   transform: translateX(-50%);
   width: 50%;
   height: 50px;
@@ -58,55 +68,44 @@
   }
 }
 
-.container-projets {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 17rem;
-  padding-right: 5vw;
-  position: relative;
-  width: 70%;
-  margin: auto;
-  gap: 3rem;
-  .projet {
-    backdrop-filter: blur(2px);
-    width: 38%;
-    padding: 1rem;
-    height: 20rem;
-    border: 2px solid var(--color);
-    z-index: 5;
-    .img-projet {
-      height: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      img {
-        height: 100%;
-      }
+.projet {
+  backdrop-filter: blur(2px);
+  width: calc(10rem + 15vw);
+  padding: 1rem;
+  height: 20rem;
+  border: 2px solid var(--color);
+  z-index: 5;
+  .img-projet {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 100%;
     }
-    h3 {
-      margin-top: 2rem;
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
+  }
+  h3 {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .content-projet {
+    border-top: 2px solid var(--color);
+    p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
     }
+  }
+  .langage {
+    font-size: 1rem !important;
+    font-style: italic;
+  }
+  &:hover {
+    background-color: var(--color);
+    color: var(--back-color);
+    transition: all 0.3s ease;
     .content-projet {
-      border-top: 2px solid var(--color);
-      p {
-        margin-top: 1rem;
-        font-size: 1.1rem;
-      }
-    }
-    .langage {
-      font-size: 1rem !important;
-      font-style: italic;
-    }
-    &:hover {
-      background-color: var(--color);
-      color: var(--back-color);
-      transition: all 0.3s ease;
-      .content-projet {
-        border-top: 2px solid var(--back-color);
-      }
+      border-top: 2px solid var(--back-color);
     }
   }
 }
