@@ -52,7 +52,7 @@ const Skills = ({ theme, handleTheme }) => {
             <h2>FRAMEWORKS :</h2>
             <ul>
               <li>Laravel, Slim, Twig</li>
-              <li>ExpressJS</li>
+              <li>ExpressJS, Axios, Redux</li>
             </ul>
           </div>
         </div>
