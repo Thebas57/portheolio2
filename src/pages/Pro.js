@@ -6,8 +6,16 @@ import { NavLink } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import BigTitle from "../components/BigTitle";
 import { motion } from "framer-motion";
+import pro from "../json/pro.json";
 
 const Pro = ({ theme, handleTheme }) => {
+  //Pour les expériences pro / libelle
+  function createArrayWithBrLines(inputString) {
+    const linesArray = inputString.split("<br/>");
+    return linesArray.map((line, index) => {
+      return <p key={index}>{line}</p>;
+    });
+  }
   //Pour framer motion
   const container = {
     hidden: { opacity: 0 },
@@ -106,98 +114,30 @@ const Pro = ({ theme, handleTheme }) => {
           initial="hidden"
           animate="show"
         >
-          <motion.div variants={Item}>
-            <div className="card">
-              <div className="front">
-                <h1>Expérience pro</h1>
-                <h3>2018-2020</h3>
-              </div>
-              <div className="backcard">
-                <div className="back-content">
-                  <h1>Chrono-Caisse</h1>
-                  <h3>Développeur web en CDI</h3>
-                  <hr />
-                  <p>
-                    Le lorem ipsum est, en imprimerie, une suite de mots sans
-                    signification utilisée à titre provisoire pour calibrer une
-                    mise en page,
-                  </p>
-                  <p>
-                    Le lorem ipsum est, en imprimerie, une suite de mots sans
-                    signification utilisée à titre provisoire pour calibrer une
-                    mise en page,
-                  </p>
+          {pro.pro.map((exp) => {
+            return (
+              <motion.div variants={Item} key={exp.id}>
+                <div className="card">
+                  <div className="front">
+                    <h1>
+                      {exp.type === "experience" ? "Expérience pro" : "Diplôme"}
+                    </h1>
+                    <h3>{exp.date}</h3>
+                  </div>
+                  <div className="backcard">
+                    <div className="back-content">
+                      <h1>{exp.lieu}</h1>
+                      <h3>{exp.libelle}</h3>
+                      <hr />
+                      <div className="description">
+                        {createArrayWithBrLines(exp.description)}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </motion.div>{" "}
-          <motion.div variants={Item}>
-            <div className="card">
-              <div className="front">
-                <h1>Diplôme</h1>
-                <h3>2018</h3>
-              </div>
-              <div className="backcard">
-                <h1>Coucou</h1>
-              </div>
-            </div>
-          </motion.div>{" "}
-          <div className="card">
-            <div className="front">
-              <h1>Expérience pro</h1>
-              <h3>2018-2020</h3>
-            </div>
-            <div className="backcard">
-              <p>Coucou</p>
-            </div>
-          </div>{" "}
-          <div className="card">
-            <div className="front">
-              <h1>Diplôme</h1>
-              <h3>2018</h3>
-            </div>
-            <div className="backcard">
-              <p>Coucou</p>
-            </div>
-          </div>{" "}
-          <div className="card">
-            <div className="front">
-              <h1>Expérience pro</h1>
-              <h3>2018-2020</h3>
-            </div>
-            <div className="back">
-              <p>Coucou</p>
-            </div>
-          </div>{" "}
-          <div className="card">
-            <div className="front">
-              <h1>Diplôme</h1>
-              <h3>2018</h3>
-            </div>
-            <div className="back">
-              <p>Coucou</p>
-            </div>
-          </div>{" "}
-          <div className="card">
-            <div className="front">
-              <h1>Expérience pro</h1>
-              <h3>2018-2020</h3>
-            </div>
-            <div className="back">
-              <h2></h2>
-              <h4></h4>
-              <p>Coucou</p>
-            </div>
-          </div>{" "}
-          <div className="card">
-            <div className="front">
-              <h1>Diplôme</h1>
-              <h3>2018</h3>
-            </div>
-            <div className="back">
-              <p>Coucou</p>
-            </div>
-          </div>{" "}
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </motion.div>

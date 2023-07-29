@@ -50,6 +50,7 @@
     background-color: var(--back-color);
     color: var(--color);
     cursor: pointer;
+    transform: rotateY(180deg);
   }
 }
 
@@ -67,7 +68,7 @@
   backface-visibility: hidden;
 }
 
-.card .backcard {
+.backcard {
   transform: rotateY(180deg);
 }
 
@@ -81,10 +82,16 @@
   hr {
     width: 80%;
   }
-}
-
-.card:hover {
-  transform: rotateY(180deg);
+  .description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    p:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
 }
 
 .yinyang-container {

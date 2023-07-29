@@ -1,0 +1,68 @@
+{
+    "pro": [
+        {
+            "id": 1,
+            "type": "experience",
+            "date": "Septembre 2020 - 2022 ",
+            "lieu": "Chrono-Caisse",
+            "libelle": "Développeur web en CDI",
+            "description": "Ajout et amélioration de fonctionnalités sur l'application Chrono-Caisse <br/> Support client <br/> Développement de plusieurs APIs pour communiquer avec les différentes sites e-commerce (Prestashop, Woocommerce)"
+        },
+        {
+            "id": 2,
+            "type": "diplome",
+            "date": "Janvier 2023",
+            "lieu": "Nancy - Centre GRETA",
+            "libelle": "Formation d'Anglais",
+            "description": "J'ai eu la chance d'effectuer une formation d'anglais de 280 heures, ce qui m'a permis d'atteindre le niveau B1 en anglais."
+        },
+        {
+            "id": 3,
+            "type": "experience",
+            "date": "Avril - Août 2020",
+            "lieu": "Chrono-Caisse",
+            "libelle": "Stagiaire développeur web",
+            "description": "Ajout et amélioration de fonctionnalités sur l'application Chrono-Caisse <br/> Développement d'une API pour communiquer avec les différentes sites e-commerce (Prestashop, Woocommerce)"
+        },
+        {
+            "id": 4,
+            "type": "diplome",
+            "date": "Juillet 2020",
+            "lieu": "IUT Nancy Charlemagne",
+            "libelle": "Titulaire de la Licence Professionnelle Informatique CIASIE",
+            "description": ""
+        },
+        {
+            "id": 5,
+            "type": "experience",
+            "date": "Juillet - Août 2019",
+            "lieu": "JUMO REGULATION",
+            "libelle": "Opérateur informatique",
+            "description": "Amélioration de leur site internet. <br/> Développement de bases notes. <br/> Support client."
+        },
+        {
+            "id": 6,
+            "type": "diplome",
+            "date": "Juillet 2019",
+            "lieu": "IUT Metz",
+            "libelle": "Titulaire du DUT Informatique",
+            "description": ""
+        },
+        {
+            "id": 7,
+            "type": "experience",
+            "date": "Avril - Juin 2019",
+            "lieu": "JUMO REGULATION",
+            "libelle": "Stagiaire informatique",
+            "description": "Mise en ligne d’un catalogue stock sur leur site. <br/> Développement de bases notes. <br/> Support client."
+        },
+        {
+            "id": 8,
+            "type": "diplome",
+            "date": "Juillet 2017",
+            "lieu": "Lycée de la communication",
+            "libelle": "Titulaire du baccalauréat STI2D Spécialité Systèmes d’information et numérique",
+            "description": ""
+        }
+    ]
+}
