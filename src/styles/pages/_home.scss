@@ -95,6 +95,7 @@ a {
   font-family: $font-1;
   display: flex;
   justify-content: space-evenly;
+  height: min-content;
   h4 {
     cursor: pointer;
   }
@@ -103,11 +104,20 @@ a {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    height: 5rem;
+    width: 10rem;
     svg {
       cursor: pointer;
       font-size: 2rem;
       padding-bottom: 20px;
     }
+  }
+}
+
+.moi > div:hover {
+
+  h4 {
+    font-size: 1.1rem !important;
   }
 }
 
