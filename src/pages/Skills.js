@@ -36,23 +36,23 @@ const Skills = ({ theme, handleTheme }) => {
             </div>
           </div>
           <div className="description">
-            Le lorem ipsum est, en imprimerie, une suite de mots sans
-            signification utilisée à titre provisoire pour calibrer une mise en
-            page, le texte définitif venant remplacer le faux-texte dès qu'il
-            est prêt ou que la mise en page est achevée.
+            Mon amour pour le backend réside dans la logique et la structure qui
+            permettent aux applications de fonctionner de manière fluide et
+            efficace. Tout ceci comprend la conception et la gestion de bases de
+            données ainsi que la création d'APIs.
           </div>
           <div className="comp">
-            <h2>SKILLS :</h2>
+            <h2>LANGAGES :</h2>
             <ul>
               <li>PHP</li>
-              <li>JS</li>
+              <li>JS (NodeJs)</li>
             </ul>
           </div>
           <div className="comp">
-            <h2>TOOLS :</h2>
+            <h2>FRAMEWORKS :</h2>
             <ul>
-              <li>PHP</li>
-              <li>JS</li>
+              <li>Laravel, Slim, Twig</li>
+              <li>ExpressJS</li>
             </ul>
           </div>
         </div>
@@ -65,23 +65,22 @@ const Skills = ({ theme, handleTheme }) => {
             </div>
           </div>
           <div className="description">
-            Le lorem ipsum est, en imprimerie, une suite de mots sans
-            signification utilisée à titre provisoire pour calibrer une mise en
-            page, le texte définitif venant remplacer le faux-texte dès qu'il
-            est prêt ou que la mise en page est achevée.
+            Le frontend est mon terrain de jeu créatif où je peux donner vie aux
+            idées et créer des interfaces élégantes, interactives et
+            conviviales.
           </div>
           <div className="comp">
             <h2>SKILLS :</h2>
             <ul>
-              <li>PHP</li>
+              <li>HTML, CSS</li>
               <li>JS</li>
             </ul>
           </div>
           <div className="comp">
-            <h2>TOOLS :</h2>
+            <h2>FRAMEWORKS :</h2>
             <ul>
-              <li>PHP</li>
-              <li>JS</li>
+              <li>Scss</li>
+              <li>ReactJS</li>
             </ul>
           </div>
         </div>

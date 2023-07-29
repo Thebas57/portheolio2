@@ -98,7 +98,7 @@ const Home = ({ theme, handleTheme }) => {
               }}
             >
               <FaChessKing />
-              <h4>A propos de moi</h4>
+              <h4>À propos de moi</h4>
             </motion.div>
           </NavLink>
         </div>

@@ -1,17 +1,20 @@
-.socials-container{
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    gap: 10px;
-    bottom: 0;
-    align-items: center;
-    a{
-        color: inherit;
-    }
-    .line{
-        width: 2px;
-        height: 7rem;
-        background-color: var(--color) !important;
-    }
+.socials-container {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  gap: 10px;
+  bottom: 0;
+  align-items: center;
+  .social:hover {
+    transform: translate(10px, 0) !important;
+  }
+  a {
+    color: inherit;
+  }
+  .line {
+    width: 2px;
+    height: 7rem;
+    background-color: var(--color) !important;
+  }
 }
