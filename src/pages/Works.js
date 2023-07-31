@@ -7,7 +7,8 @@ import { NavLink } from "react-router-dom";
 import AncreScroll from "../components/AncreScroll";
 import BigTitle from "../components/BigTitle";
 import { motion } from "framer-motion";
-import PianoParticle from "../components/PianoParticle";
+import projets from "../json/projets.json";
+import { BsGithub } from "react-icons/bs";
 
 const Works = ({ theme, handleTheme }) => {
   //Pour framer motion
@@ -34,6 +35,7 @@ const Works = ({ theme, handleTheme }) => {
     },
   };
   const [numbers, setNumbers] = useState(0);
+  const [filter, setFilter] = useState("Frontend");
 
   useEffect(() => {
     let num = (window.innerHeight - 70) / 25;
@@ -48,7 +50,10 @@ const Works = ({ theme, handleTheme }) => {
       transition={{ duration: 0.6 }}
       className={theme ? "light-theme works-page" : "dark-theme works-page"}
     >
-      <div className={theme ? "light-theme works" : "dark-theme works"} id="test">
+      <div
+        className={theme ? "light-theme works" : "dark-theme works"}
+        id="test"
+      >
         <SwitchTheme handleTheme={handleTheme} />
         <Logo />
         <Socials />
@@ -58,9 +63,24 @@ const Works = ({ theme, handleTheme }) => {
         <AncreScroll numbers={numbers} />
         <BigTitle title="WORKS" />
         <div className="filter">
-          <div>Filter 1</div>
-          <div>Filter 2</div>
-          <div>Filter 3</div>
+          <div
+            className={filter === "Frontend" ? "selected" : ""}
+            onClick={(e) => setFilter("Frontend")}
+          >
+            Front-end
+          </div>
+          <div
+            className={filter === "Backend" ? "selected" : ""}
+            onClick={(e) => setFilter("Backend/Frontend")}
+          >
+            Back-end
+          </div>
+          <div
+            className={filter === "Redux" ? "selected" : ""}
+            onClick={(e) => setFilter("Backend/Redux")}
+          >
+            Back-end (redux)
+          </div>
         </div>
         <motion.div
           variants={container}
@@ -69,86 +89,35 @@ const Works = ({ theme, handleTheme }) => {
           className="center"
         >
           <div className="grid">
-            <motion.div className="projet" variants={Item}>
-              <div className="img-projet">
-                <img src="./img/chesscircle.png" alt="img" />
-              </div>
-              <h3>Titre du Bloc</h3>
-              <div className="content-projet">
-                <p>Description du Bloc</p>
-                <p className="langage">#ReactJs #Php</p>
-              </div>
-            </motion.div>
-            <motion.div className="projet" variants={Item}>
-              <div className="img-projet">
-                <img src="./img/chesscircle.png" alt="img" />
-              </div>
-              <h3>Titre du Bloc</h3>
-              <div className="content-projet">
-                <p>Description du Bloc</p>
-                <p className="langage">#ReactJs #Php</p>
-              </div>
-            </motion.div>{" "}
-            <motion.div className="projet" variants={Item}>
-              <div className="img-projet">
-                <img src="./img/chesscircle.png" alt="img" />
-              </div>
-              <h3>Titre du Bloc</h3>
-              <div className="content-projet">
-                <p>Description du Bloc</p>
-                <p className="langage">#ReactJs #Php</p>
-              </div>
-            </motion.div>{" "}
-            <motion.div className="projet" variants={Item}>
-              <div className="img-projet">
-                <img src="./img/chesscircle.png" alt="img" />
-              </div>
-              <h3>Titre du Bloc</h3>
-              <div className="content-projet">
-                <p>Description du Bloc</p>
-                <p className="langage">#ReactJs #Php</p>
-              </div>
-            </motion.div>{" "}
-            <motion.div className="projet" variants={Item}>
-              <div className="img-projet">
-                <img src="./img/chesscircle.png" alt="img" />
-              </div>
-              <h3>Titre du Bloc</h3>
-              <div className="content-projet">
-                <p>Description du Bloc</p>
-                <p className="langage">#ReactJs #Php</p>
-              </div>
-            </motion.div>{" "}
-            <motion.div className="projet" variants={Item}>
-              <div className="img-projet">
-                <img src="./img/chesscircle.png" alt="img" />
-              </div>
-              <h3>Titre du Bloc</h3>
-              <div className="content-projet">
-                <p>Description du Bloc</p>
-                <p className="langage">#ReactJs #Php</p>
-              </div>
-            </motion.div>{" "}
-            <motion.div className="projet" variants={Item}>
-              <div className="img-projet">
-                <img src="./img/chesscircle.png" alt="img" />
-              </div>
-              <h3>Titre du Bloc</h3>
-              <div className="content-projet">
-                <p>Description du Bloc</p>
-                <p className="langage">#ReactJs #Php</p>
-              </div>
-            </motion.div>{" "}
-            <motion.div className="projet" variants={Item}>
-              <div className="img-projet">
-                <img src="./img/chesscircle.png" alt="img" />
-              </div>
-              <h3>Titre du Bloc</h3>
-              <div className="content-projet">
-                <p>Description du Bloc</p>
-                <p className="langage">#ReactJs #Php</p>
-              </div>
-            </motion.div>
+            {projets.map((projet) => {
+              if (projet.tri === filter) {
+                return (
+                  <motion.div
+                    className="projet"
+                    variants={Item}
+                    key={projet.id}
+                  >
+                    <div className="img-projet">
+                      <img src={projet.picture} alt="img" />
+                    </div>
+                    <div className="header-projet">
+                      <h3>{projet.name}</h3>
+                      <NavLink target="_blank" to={projet.source}>
+                        <BsGithub />
+                      </NavLink>
+                    </div>
+                    <div className="content-projet">
+                      <p>{projet.info}</p>
+                      <p className="langage">
+                        {projet.languages.map((tool) => {
+                          return "#" + tool + " ";
+                        })}
+                      </p>
+                    </div>
+                  </motion.div>
+                );
+              }
+            })}
           </div>
         </motion.div>
       </div>

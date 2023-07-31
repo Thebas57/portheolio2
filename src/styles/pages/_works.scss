@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
   grid-gap: calc(1rem + 2vw);
+  padding-bottom: 5rem;
 }
 
 .back {
@@ -66,22 +67,38 @@
       color: var(--back-color);
     }
   }
+  .selected {
+    background-color: var(--color);
+    color: var(--back-color);
+  }
 }
 
 .projet {
   backdrop-filter: blur(2px);
   width: calc(10rem + 15vw);
   padding: 1rem;
-  height: 20rem;
+  height: 28rem;
   border: 2px solid var(--color);
   z-index: 5;
+  .header-projet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      font-size: 2rem;
+    }
+  }
   .img-projet {
-    height: 50%;
+    height: 45%;
     width: 100%;
     display: flex;
     justify-content: center;
     img {
       height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
     }
   }
   h3 {
@@ -106,6 +123,9 @@
     transition: all 0.3s ease;
     .content-projet {
       border-top: 2px solid var(--back-color);
+    }
+    .img-projet {
+      border: 1px solid var(--back-color);
     }
   }
 }
