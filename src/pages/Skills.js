@@ -27,82 +27,84 @@ const Skills = ({ theme, handleTheme }) => {
       exit={{ x: "100%" }}
       transition={{ duration: 0.6 }}
     >
-      <SwitchTheme handleTheme={handleTheme} />
-      <Particle handleTheme={handleTheme} theme={theme} />
-      <Logo />
-      <Socials />
-      <NavLink className="back" to="/">
-        <FaArrowCircleLeft />
-      </NavLink>
-      <BigTitle title="SKILLS" />
-      <div className="skills-container">
-        <motion.div
-          className="skill"
-          initial="hidden"
-          animate="visible"
-          variants={rightVariants}
-          transition={{ duration: 1.5, ease: "easeOut" }}
-        >
-          <div className="titre">
-            <div>
-              <GiSkills />
-              <h1>Backend</h1>
+      <div className="skills-fix">
+        <SwitchTheme handleTheme={handleTheme} />
+        <Particle handleTheme={handleTheme} theme={theme} />
+        <Logo />
+        <Socials />
+        <NavLink className="back" to="/">
+          <FaArrowCircleLeft />
+        </NavLink>
+        <BigTitle title="SKILLS" />
+        <div className="skills-container">
+          <motion.div
+            className="skill"
+            initial="hidden"
+            animate="visible"
+            variants={rightVariants}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
+            <div className="titre">
+              <div>
+                <GiSkills />
+                <h1>Backend</h1>
+              </div>
             </div>
-          </div>
-          <div className="description">
-            J'adore le backend car il permet aux applications de fonctionner de
-            manière fluide et efficace. Cela comprend la conception et la
-            gestion de bases de données ainsi que la création d'APIs.
-          </div>
-          <div className="comp">
-            <h2>LANGAGES :</h2>
-            <ul>
-              <li>PHP</li>
-              <li>JS (NodeJs)</li>
-            </ul>
-          </div>
-          <div className="comp">
-            <h2>FRAMEWORKS :</h2>
-            <ul>
-              <li>Laravel, Slim, Twig</li>
-              <li>ExpressJS, Axios, Redux</li>
-            </ul>
-          </div>
-        </motion.div>
-        <motion.div
-          className="skill"
-          initial="hidden"
-          animate="visible"
-          variants={leftVariants}
-          transition={{ duration: 1.5, ease: "easeOut" }}
-        >
-          <div className="titre">
-            <div>
-              <MdDeveloperMode />
+            <div className="description">
+              J'adore le backend car il permet aux applications de fonctionner
+              de manière fluide et efficace. Cela comprend la conception et la
+              gestion de bases de données ainsi que la création d'APIs.
+            </div>
+            <div className="comp">
+              <h2>LANGAGES :</h2>
+              <ul>
+                <li>PHP</li>
+                <li>JS (NodeJs)</li>
+              </ul>
+            </div>
+            <div className="comp">
+              <h2>FRAMEWORKS :</h2>
+              <ul>
+                <li>Laravel, Slim, Twig</li>
+                <li>ExpressJS, Axios, Redux</li>
+              </ul>
+            </div>
+          </motion.div>
+          <motion.div
+            className="skill"
+            initial="hidden"
+            animate="visible"
+            variants={leftVariants}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
+            <div className="titre">
+              <div>
+                <MdDeveloperMode />
 
-              <h1>Frontend</h1>
+                <h1>Frontend</h1>
+              </div>
             </div>
-          </div>
-          <div className="description">
-            Le frontend est mon terrain de jeu créatif où je peux donner vie aux
-            idées et créer des interfaces élégantes, interactives et
-            conviviales.
-          </div>
-          <div className="comp">
-            <h2>SKILLS :</h2>
-            <ul>
-              <li>HTML, CSS</li>
-              <li>JS</li>
-            </ul>
-          </div>
-          <div className="comp">
-            <h2>FRAMEWORKS :</h2>
-            <ul>
-              <li>Scss</li>
-              <li>ReactJS</li>
-            </ul>
-          </div>
-        </motion.div>
+            <div className="description">
+              Le frontend est mon terrain de jeu créatif où je peux donner vie
+              aux idées et créer des interfaces élégantes, interactives et
+              conviviales.
+            </div>
+            <div className="comp">
+              <h2>SKILLS :</h2>
+              <ul>
+                <li>HTML, CSS</li>
+                <li>JS</li>
+              </ul>
+            </div>
+            <div className="comp">
+              <h2>FRAMEWORKS :</h2>
+              <ul>
+                <li>Scss</li>
+                <li>ReactJS</li>
+              </ul>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </motion.div>
   );
