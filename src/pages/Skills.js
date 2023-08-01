@@ -11,6 +11,14 @@ import BigTitle from "../components/BigTitle";
 import { motion } from "framer-motion";
 
 const Skills = ({ theme, handleTheme }) => {
+  const rightVariants = {
+    hidden: { x: -1000, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
+  const leftVariants = {
+    hidden: { x: 1000, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
   return (
     <motion.div
       className={theme ? "light-theme skills-page" : "dark-theme skills-page"}
@@ -28,7 +36,13 @@ const Skills = ({ theme, handleTheme }) => {
       </NavLink>
       <BigTitle title="SKILLS" />
       <div className="skills-container">
-        <div className="skill">
+        <motion.div
+          className="skill"
+          initial="hidden"
+          animate="visible"
+          variants={rightVariants}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           <div className="titre">
             <div>
               <GiSkills />
@@ -36,10 +50,9 @@ const Skills = ({ theme, handleTheme }) => {
             </div>
           </div>
           <div className="description">
-            Mon amour pour le backend réside dans la logique et la structure qui
-            permettent aux applications de fonctionner de manière fluide et
-            efficace. Tout ceci comprend la conception et la gestion de bases de
-            données ainsi que la création d'APIs.
+            J'adore le backend car il permet aux applications de fonctionner de
+            manière fluide et efficace. Cela comprend la conception et la
+            gestion de bases de données ainsi que la création d'APIs.
           </div>
           <div className="comp">
             <h2>LANGAGES :</h2>
@@ -55,8 +68,14 @@ const Skills = ({ theme, handleTheme }) => {
               <li>ExpressJS, Axios, Redux</li>
             </ul>
           </div>
-        </div>
-        <div className="skill">
+        </motion.div>
+        <motion.div
+          className="skill"
+          initial="hidden"
+          animate="visible"
+          variants={leftVariants}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           <div className="titre">
             <div>
               <MdDeveloperMode />
@@ -83,7 +102,7 @@ const Skills = ({ theme, handleTheme }) => {
               <li>ReactJS</li>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

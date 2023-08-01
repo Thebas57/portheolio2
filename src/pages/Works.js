@@ -30,7 +30,7 @@ const Works = ({ theme, handleTheme }) => {
       scale: 1,
       transition: {
         type: "spring",
-        duration: 0.5,
+        duration: 2,
       },
     },
   };

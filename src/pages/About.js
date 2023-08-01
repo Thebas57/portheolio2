@@ -10,6 +10,10 @@ import BigTitle from "../components/BigTitle";
 import { motion } from "framer-motion";
 
 const About = ({ theme, handleTheme }) => {
+  const animationVariants = {
+    hidden: { x: -1000, opacity: 0 },
+    visible: { x: 0, opacity: 1 }
+  };
   return (
     <motion.div
       className={theme ? "light-theme about-page" : "dark-theme about-page"}
@@ -19,36 +23,39 @@ const About = ({ theme, handleTheme }) => {
       transition={{ duration: 0.6 }}
     >
       <SwitchTheme handleTheme={handleTheme} />
-      <PianoParticle handleTheme={handleTheme} theme={theme} />
       <Logo />
+      <PianoParticle handleTheme={handleTheme} theme={theme} />
       <Socials />
       <NavLink className="back" to="/">
         <FaArrowCircleLeft />
       </NavLink>
-      <GiGrandPiano className="piano" />
+      <motion.div>
+        <GiGrandPiano className="piano" />
+      </motion.div>
       <BigTitle title="ABOUT" />
-      <div className="about-container">
+      <motion.div
+        className="about-container"
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
         <div className="about-theo">
           <div>
-            Le lorem ipsum est, en imprimerie, une suite de mots sans
-            signification utilisée à titre provisoire pour calibrer une mise en
-            page, le texte définitif venant remplacer le faux-texte dès qu'il
-            est prêt ou que la mise en page est achevée
+            Je m'appelle Théo, développeur full stack de 24 ans résidant à
+            Nancy. Le frontend et le backend m'ont toujours captivé.
           </div>
           <div>
-            Le lorem ipsum est, en imprimerie, une suite de mots sans
-            signification utilisée à titre provisoire pour calibrer une mise en
-            page, le texte définitif venant remplacer le faux-texte dès qu'il
-            est prêt ou que la mise en page est achevée
+            Passionné par le développement web, j'ai un véritable penchant pour
+            la découverte de nouvelles technologies et concepts. Je m'efforce
+            d'élargir mes compétences pour rester à la pointe de mon domaine.
           </div>
           <div>
-            Le lorem ipsum est, en imprimerie, une suite de mots sans
-            signification utilisée à titre provisoire pour calibrer une mise en
-            page, le texte définitif venant remplacer le faux-texte dès qu'il
-            est prêt ou que la mise en page est achevée
+            Pour toute question ou collaboration, n'hésitez pas à me contacter
+            via mes réseaux sociaux ou par e-mail.
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

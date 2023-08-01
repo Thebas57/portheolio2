@@ -7,11 +7,11 @@
   color: var(--color);
   .piano {
     //width: 22%;
-    font-size: 20rem;
+    font-size: 20vw;
     right: 10%;
     top: 20%;
     position: absolute;
-    animation: bounce 4s ease infinite;
+    animation: bounce 4s ease infinite, apparition 5s ease;
   }
 }
 
@@ -22,6 +22,15 @@
   }
   50% {
     transform: translateY(100px) translateX(30px);
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -42,16 +51,54 @@
   display: flex;
   align-items: center;
   .about-theo {
+    backdrop-filter: blur(4px) !important;
     display: flex;
     border: 2px solid var(--color);
     flex-direction: column;
     justify-content: space-around;
     padding: 1rem;
-    width: 45vw;
-    height: 65vh;
+    width: 50vw;
+    height: 60vh;
     margin-left: 10vw;
     line-height: 1.5;
     font-family: $font-5;
-    font-size: 1.4rem;
+    font-size: calc(0.6rem + 1vw);
+    font-style: italic;
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(100px) translateX(-30px);
+    }
+  }
+}
+
+@media (max-width: 40em) {
+  .about-container {
+    .about-theo {
+      width: 70vw;
+      height: 60vh;
+      backdrop-filter: none !important;
+    }
+  }
+}
+
+@media (max-width: 30em) {
+  .about-container {
+    .about-theo {
+      width: 60vw;
+      height: 65vh;
+      margin-left: 14vw;
+      line-height: 1.5;
+      font-family: $font-5;
+      font-size: calc(0.6rem + 1vw);
+      font-style: italic;
+    }
   }
 }
