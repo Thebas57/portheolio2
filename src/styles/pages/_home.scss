@@ -5,8 +5,7 @@ a {
 
 .home {
   width: 100vw;
-  height: 96vh;
-  padding: 2rem 2rem 0 2rem;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -15,6 +14,7 @@ a {
   position: fixed;
   font-size: 3rem;
   left: 50%;
+  top: 2rem;
   transform: translate(-54%, 0); // pour bien le centrer
   z-index: 10;
   svg {
@@ -31,11 +31,13 @@ a {
   font-family: $font-4;
   font-size: 2rem;
   position: fixed;
+  top: 2rem;
+  left: 2rem;
 }
 
 .contact {
   position: absolute;
-  top: 2rem;
+  top: 2.8rem;
   right: calc(2rem + 4vw);
   letter-spacing: 0.7px;
   font-family: $font-1;
@@ -66,10 +68,15 @@ a {
   }
 }
 
+.socialHome {
+  position: absolute;
+  left: calc(1rem + 1.3vw);
+}
+
 .projets {
   position: absolute;
   top: 50vh;
-  left: calc(3rem);
+  left: calc(1rem + 4vw);
   letter-spacing: 0.7px;
   font-family: $font-1;
   transform: translate(-50%, -50%) rotate(-90deg);
@@ -115,7 +122,6 @@ a {
 }
 
 .moi > div:hover {
-
   h4 {
     font-size: 1.1rem !important;
   }
@@ -124,7 +130,9 @@ a {
 .middle {
   font-size: 5rem;
   position: absolute;
-  transform: translate(-90%, -90%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: all 0.8s ease;
   svg {
     cursor: pointer;
@@ -183,4 +191,53 @@ a {
 .projets h4,
 .moi > div h4 {
   transition: all 0.3s ease-out;
+}
+
+@media (max-width: 1024px) {
+  .skills {
+    right: calc(2rem + 6vw);
+  }
+  .projets {
+    left: calc(1rem + 6vw);
+  }
+}
+
+@media (max-width: 50rem) {
+  .skills {
+    right: calc(2rem + 8vw);
+  }
+  .projets {
+    left: calc(1rem + 8vw);
+  }
+  .moi{
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .contact,
+  .skills,
+  .projets,
+  .moi > div {
+    h4 {
+      font-size: 0.9rem;
+    }
+  }
+  .skills {
+    right: calc(3rem + 8vw);
+  }
+  .projets {
+    left: calc(2rem + 8vw);
+  }
+  .notClick svg{
+    height: 1em;
+    width: 1em;
+  }
+  .contact{
+    right: calc(1rem + 0.8vw);
+  }
+}
+
+@media (max-width:1200em){
+  
 }

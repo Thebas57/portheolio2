@@ -26,14 +26,16 @@ const Home = ({ theme, handleTheme }) => {
   return (
     <motion.div
       className={theme ? "light-theme home" : "dark-theme home"}
-      initial={{ opacity:0 }}
-      animate={{ opacity:1 }}
-      exit={{ opacity:0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={{ duration: 0.6 }}
     >
       <SwitchTheme handleTheme={handleTheme} />
       <Logo />
-      <Socials />
+      <div className="socialHome">
+        <Socials />
+      </div>
       <BigTitle title="HOME" />
       <motion.div
         className="contact"

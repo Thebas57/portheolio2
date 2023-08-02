@@ -6,13 +6,13 @@ const Me = ({ click }) => {
     <motion.div
       className={click ? "me-container display" : "me-container"}
       initial={{ height: "4vh", opacity: 0 }}
-      animate={{ height: "40vh", opacity: 1 }}
+      animate={{ height: "50vh", opacity: 1 }}
       transition={{ type: "spring", duration: 2, delay: 0.4 }}
     >
       <div className="right">
         <h1>Bonjour,</h1>
         <br />
-        <h3>Je suis Théo HELF.</h3>
+        <h3>Je suis Théo.</h3>
         <br />
         <h5>
           Développeur informatique, voici mon portfolio,{" "}
