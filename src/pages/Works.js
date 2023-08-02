@@ -36,10 +36,21 @@ const Works = ({ theme, handleTheme }) => {
   };
   const [numbers, setNumbers] = useState(0);
   const [filter, setFilter] = useState("Frontend");
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 593);
 
   useEffect(() => {
     let num = (window.innerHeight - 70) / 25;
     setNumbers(parseInt(num));
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
@@ -70,16 +81,16 @@ const Works = ({ theme, handleTheme }) => {
             Front-end
           </div>
           <div
-            className={filter === "Backend" ? "selected" : ""}
+            className={filter === "Backend/Frontend" ? "selected" : ""}
             onClick={(e) => setFilter("Backend/Frontend")}
           >
             Back-end
           </div>
           <div
-            className={filter === "Redux" ? "selected" : ""}
+            className={filter === "Backend/Redux" ? "selected" : ""}
             onClick={(e) => setFilter("Backend/Redux")}
           >
-            Back-end (redux)
+            {!isMobile ? "Back-end (redux)" : "Redux"}
           </div>
         </div>
         <motion.div

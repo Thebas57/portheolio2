@@ -27,3 +27,12 @@
 .ancre {
   fill: var(--color) !important;
 }
+
+@media (max-width: 30em) {
+  .preAncre {
+    right: 1.7rem;
+  }
+  .slide{
+    right: 1rem;
+  }
+}
