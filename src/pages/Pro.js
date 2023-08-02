@@ -61,19 +61,29 @@ const Pro = ({ theme, handleTheme }) => {
     //fonction rotate yinyang
     const rotate = () => {
       let rot = ref.current.scrollLeft;
+      console.log(rot);
       refYy.current.style.transform = `rotate(` + -rot + `deg)`;
     };
+
+    // Vérifier si le périphérique est un appareil mobile
+    const isMobile =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
 
     // Ajouter l'écouteur d'événement pour le défilement de la souris
     if (window.addEventListener) {
       // Pour les navigateurs modernes
+      if (isMobile) window.addEventListener("touchmove", rotate);
+      else window.addEventListener("wheel", rotate);
+
       window.addEventListener("wheel", handleMouseWheel);
-      window.addEventListener("wheel", rotate);
     }
 
     return () => {
       window.removeEventListener("wheel", handleMouseWheel);
-      window.removeEventListener("wheel", rotate);
+      if (isMobile) window.addEventListener("touchmove", rotate);
+      else window.addEventListener("wheel", rotate);
     };
   });
 

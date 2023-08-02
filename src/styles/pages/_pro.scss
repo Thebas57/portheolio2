@@ -105,3 +105,57 @@
   right: 2rem;
   width: 100px;
 }
+
+@media (max-width: 50em) {
+  .card {
+    height: 26vh;
+    width: 16rem;
+  }
+  .back-content {
+    .description {
+      font-size: calc(0.5em + 1vw);
+      p:not(:first-child) {
+        margin-top: 1vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 40em) {
+  .card {
+    height: 32vh;
+    width: 11rem;
+  }
+  .back-content {
+    .description {
+      font-size: calc(0.6em + 1vw);
+      p:not(:first-child) {
+        margin-top: 3vw;
+      }
+    }
+  }
+  .yinyang {
+    width: 50px;
+  }
+}
+
+@media (max-width: 40em) {
+  .card {
+    height: 34vh;
+    width: 9rem;
+  }
+  .back-content {
+    h1 {
+      font-size: calc(1.5em + 1vw);
+    }
+    h3 {
+      font-size: calc(0.7em + 1vw);
+    }
+    .description {
+      font-size: calc(0.6em + 1vw);
+      p:not(:first-child) {
+        margin-top: 3vw;
+      }
+    }
+  }
+}
