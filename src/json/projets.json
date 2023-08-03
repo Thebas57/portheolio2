@@ -9,7 +9,7 @@
         ],
         "source": "https://github.com/Thebas57/app-meteo",
         "info": "Dans ce projet, vous pouvez rechercher une ville spécifique et obtenir les données météorologiques telles que la température, la sensation thermique, la pression atmosphérique, l'humidité, et plus encore.",
-        "picture": "./img/projets/meteo.png",
+        "picture": "./portheolio2/img/projets/meteo.png",
         "tri": "Backend/Frontend"
     },
     {
@@ -23,7 +23,7 @@
         ],
         "source": "https://github.com/Thebas57/MernProject",
         "info": "Il s'agit d'une application qui fonctionne sur le même principe que Twitter.",
-        "picture": "./img/projets/twotter.png",
+        "picture": "./portheolio2/img/projets/twotter.png",
         "tri": "Backend/Redux"
     },
     {
@@ -37,7 +37,7 @@
         ],
         "source": "https://github.com/Thebas57/TranslateQuizz",
         "info": "Cette application vous offre la possibilité d'enregistrer des mots ainsi que leurs traductions. Ensuite, elle propose un quiz pour vous permettre d'apprendre ces traductions de manière simple et efficace.",
-        "picture": "./img/projets/translatequizz.png",
+        "picture": "./portheolio2/img/projets/translatequizz.png",
         "tri": "Backend/Redux"
     },
     {
@@ -51,7 +51,7 @@
         ],
         "source": "https://github.com/Thebas57/Librairie",
         "info": "Il s'agit d'une bibliothèque conviviale qui vous permet de modifier, ajouter et supprimer vos documents. Les images sont générées aléatoirement à chaque fois que vous actualisez la page.",
-        "picture": "./img/projets/librairie.png",
+        "picture": "./portheolio2/img/projets/librairie.png",
         "tri": "Backend/Frontend"
     },
     {
@@ -63,7 +63,7 @@
         ],
         "source": "https://github.com/Thebas57/CVReact",
         "info": "Mon CV interactif réalisé en React offre une présentation dynamique de mes compétences et expériences, avec des animations et fonctionnalités interactives pour une meilleure expérience utilisatrice.",
-        "picture": "./img/projets/cvreact.png",
+        "picture": "./portheolio2/img/projets/cvreact.png",
         "tri": "Frontend"
     },
     {
@@ -76,7 +76,7 @@
         ],
         "source": "https://github.com/Thebas57/infinite-scroll-books",
         "info": "Une plateforme qui permet de rechercher des livres, avec une fonctionnalité de chargement infini pour afficher les résultats au fur et à mesure du défilement.",
-        "picture": "./img/projets/scrollinfini.png",
+        "picture": "./portheolio2/img/projets/scrollinfini.png",
         "tri": "Backend/Frontend"
     },
     {
@@ -88,7 +88,7 @@
         ],
         "source": "https://github.com/Thebas57/portoflio1",
         "info": "Un portfolio visuellement attrayant, mettant en avant de nombreuses animations pour créer une expérience immersive.",
-        "picture": "./img/projets/portfolioespace.png",
+        "picture": "./portheolio2/img/projets/portfolioespace.png",
         "tri": "Frontend"
     },
     {
@@ -101,7 +101,7 @@
         ],
         "source": "https://github.com/Thebas57/soho-sports",
         "info": "Un site qui fournit des résultats pour tous les matchs de rugby, football, basket et volley. Vous avez la possibilité de marquer des ligues ou des équipes en favoris, ainsi que d'accéder à d'autres fonctionnalités intéressantes.",
-        "picture": "./img/projets/sportres.png",
+        "picture": "./portheolio2/img/projets/sportres.png",
         "tri": "Backend/Frontend"
     },
     {
@@ -112,7 +112,7 @@
         ],
         "source": "https://github.com/Thebas57/menu-resto-1",
         "info": "Un superbe design de carte de restaurant trouvé sur Figma.",
-        "picture": "./img/projets/menu.png",
+        "picture": "./portheolio2/img/projets/menu.png",
         "tri": "Frontend"
     },
     {
@@ -126,7 +126,7 @@
         ],
         "source": "https://github.com/Thebas57/music-app",
         "info": "Une application musicale similaire à Deezer, dont le design et le concept sont inspirés de Javascript Master sur YouTube.",
-        "picture": "./img/projets/lyriks.png",
+        "picture": "./portheolio2/img/projets/lyriks.png",
         "tri": "Backend/Redux"
     },
     {
@@ -138,7 +138,7 @@
         ],
         "source": "https://github.com/Thebas57/animation-ul",
         "info": "Un menu interactif avec des animations qui réagissent également au défilement de la page.",
-        "picture": "./img/projets/menuinteractif.png",
+        "picture": "./portheolio2/img/projets/menuinteractif.png",
         "tri": "Frontend"
     },
     {
@@ -150,7 +150,7 @@
         ],
         "source": "https://github.com/Thebas57/lampe-shop",
         "info": "Un magnifique design découvert sur Figma qui présente des interactions et animations pour afficher les lampes et leurs caractéristiques de manière dynamique.",
-        "picture": "./img/projets/lampeshop.png",
+        "picture": "./portheolio2/img/projets/lampeshop.png",
         "tri": "Frontend"
     }
 ]
