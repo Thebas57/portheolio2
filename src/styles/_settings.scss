@@ -88,3 +88,9 @@ body {
 	top: 0;
 	left: 0;
 }
+
+@media (max-width: 50em){
+  #trail-cursor{
+    display: none !important;
+  }
+} 
