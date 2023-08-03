@@ -25,7 +25,7 @@ const Me = ({ click }) => {
         animate={{ opacity: 1 }}
         transition={{ duration: 2, delay: 1 }}
       >
-        <img src="./img/profile-img.png" alt="me" />
+        <img src="./portheolio2/img/profile-img.png" alt="me" />
       </motion.div>
     </motion.div>
   );
