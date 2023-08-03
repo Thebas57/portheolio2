@@ -1,8 +1,25 @@
-.bigtitle{
-    position: fixed;
-    color: rgba(128, 128, 128, 0.437) !important;
-    z-index: 0;
-    top: 2rem;
-    right: 5rem;
-    font-size: 10rem;
+.bigtitle {
+  position: fixed;
+  color: rgba(128, 128, 128, 0.437) !important;
+  z-index: 0;
+  top: 2rem;
+  right: 5rem;
+  font-size: 10rem;
+}
+
+@media (max-width: 50em) {
+    .bigtitle {
+      top: 6rem;
+      right: 2rem;
+      font-size: 8rem;
+    }
+  }
+  
+
+@media (max-width: 30em) {
+  .bigtitle {
+    top: 6rem;
+    right: 2rem;
+    font-size: 5rem;
+  }
 }

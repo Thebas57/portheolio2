@@ -90,15 +90,22 @@
 }
 
 @media (max-width: 30em) {
+  .about-page{
+    width: auto;
+  }
   .about-container {
     .about-theo {
       width: 60vw;
       height: 65vh;
-      margin-left: 14vw;
       line-height: 1.5;
       font-family: $font-5;
       font-size: calc(0.6rem + 1vw);
       font-style: italic;
+      transform: translateX(-2vw);
     }
+  }
+  .back{
+    top: 2.5rem !important;
+    right: 2rem;
   }
 }

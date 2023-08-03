@@ -149,8 +149,8 @@ a {
 }
 
 .click {
-  top: 93%;
-  left: 93%;
+  top: 90%;
+  left: 90%;
   svg {
     height: 1em;
     width: 1em;
@@ -160,8 +160,9 @@ a {
   }
 }
 .notClick {
-  top: 56%;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   svg {
     height: 1.5em;
     width: 1.5em;
@@ -203,18 +204,39 @@ a {
 }
 
 @media (max-width: 50rem) {
+  .click{
+    top: 88%;
+    left: 88%;
+  }
+  .click svg {
+    height: 80px;
+    width: 80px;
+  }
+  .middle svg {
+    border: 2px solid;
+  }
   .skills {
     right: calc(2rem + 8vw);
   }
   .projets {
     left: calc(1rem + 8vw);
   }
-  .moi{
+  .moi {
     bottom: 1rem;
   }
 }
 
 @media (max-width: 30rem) {
+  .click{
+    top: 85%;
+  }
+  .click svg {
+    height: 40px;
+    width: 40px;
+  }
+  .middle svg {
+    border: 1px solid;
+  }
   .contact,
   .skills,
   .projets,
@@ -229,15 +251,41 @@ a {
   .projets {
     left: calc(2rem + 8vw);
   }
-  .notClick svg{
+  .notClick svg {
     height: 1em;
     width: 1em;
   }
-  .contact{
+  .contact {
     right: calc(1rem + 0.8vw);
   }
 }
 
-@media (max-width:1200em){
-  
+@media (max-width: 25rem) {
+  .moi {
+    bottom: 0.2rem;
+    div {
+      width: 7rem;
+    }
+  }
+  .contact,
+  .skills,
+  .projets,
+  .moi > div {
+    h4 {
+      font-size: 0.7rem;
+    }
+  }
+  .skills {
+    right: calc(3rem + 8vw);
+  }
+  .projets {
+    left: calc(2rem + 8vw);
+  }
+  .notClick svg {
+    height: 1em;
+    width: 1em;
+  }
+  .contact {
+    right: calc(1rem + 0.8vw);
+  }
 }
