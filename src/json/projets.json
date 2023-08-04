@@ -50,7 +50,7 @@
             "Redux"
         ],
         "source": "https://github.com/Thebas57/Librairie",
-        "info": "Il s'agit d'une bibliothèque conviviale qui vous permet de modifier, ajouter et supprimer vos documents. Les images sont générées aléatoirement à chaque fois que vous actualisez la page.",
+        "info": "Il s'agit d'une bibliothèque qui vous permet de modifier, ajouter et supprimer vos documents. Les images sont générées aléatoirement à chaque fois que vous actualisez la page.",
         "picture": "./portheolio2/img/projets/librairie.png",
         "tri": "Backend/Frontend"
     },
@@ -62,7 +62,7 @@
             "SCSS"
         ],
         "source": "https://github.com/Thebas57/CVReact",
-        "info": "Mon CV interactif réalisé en React offre une présentation dynamique de mes compétences et expériences, avec des animations et fonctionnalités interactives pour une meilleure expérience utilisatrice.",
+        "info": "J'ai créé mon CV interactif avec React. Il propose une mise en page dynamique pour présenter mes compétences et expériences.",
         "picture": "./portheolio2/img/projets/cvreact.png",
         "tri": "Frontend"
     },
@@ -87,7 +87,7 @@
             "SCSS"
         ],
         "source": "https://github.com/Thebas57/portoflio1",
-        "info": "Un portfolio visuellement attrayant, mettant en avant de nombreuses animations pour créer une expérience immersive.",
+        "info": "J'ai créé ce portfolio comprenant beaucoup d'animations afin de rendre l'expérience interactive.",
         "picture": "./portheolio2/img/projets/portfolioespace.png",
         "tri": "Frontend"
     },
@@ -100,7 +100,7 @@
             "Axios"
         ],
         "source": "https://github.com/Thebas57/soho-sports",
-        "info": "Un site qui fournit des résultats pour tous les matchs de rugby, football, basket et volley. Vous avez la possibilité de marquer des ligues ou des équipes en favoris, ainsi que d'accéder à d'autres fonctionnalités intéressantes.",
+        "info": "Un site qui fournit des résultats pour tous les matchs de rugby, football, basket et volley. Vous avez la possibilité d'ajouter en favoris des ligues ou des équipes, ainsi que d'accéder à d'autres fonctionnalités intéressantes.",
         "picture": "./portheolio2/img/projets/sportres.png",
         "tri": "Backend/Frontend"
     },

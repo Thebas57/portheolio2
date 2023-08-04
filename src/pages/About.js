@@ -42,7 +42,7 @@ const About = ({ theme, handleTheme }) => {
       >
         <div className="about-theo">
           <div>
-            Je m'appelle Théo, développeur full stack de 24 ans résidant à
+            Je m'appelle Théo, développeur full stack de 24 ans habitant à
             Nancy. Le frontend et le backend m'ont toujours captivé.
           </div>
           <div>

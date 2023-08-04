@@ -4,7 +4,7 @@
   color: var(--color);
 }
 
-.skills-fix{
+.skills-fix {
   overflow-y: scroll !important;
   position: relative;
   height: 96vh;
@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: space-between;
     backdrop-filter: blur(4px);
-    svg{
+    svg {
       font-size: 2rem;
       margin-right: 5px;
     }
@@ -38,7 +38,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      div{
+      div {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,7 +60,7 @@
         font-size: calc(0.6em + 1vw);
       }
     }
-    &:hover{
+    &:hover {
       background-color: var(--color);
       color: var(--back-color);
       transition: all 0.2s;
@@ -112,6 +112,12 @@
 
 //Mobile
 @media (max-width: 30em) {
+  .skills-page {
+    .back {
+      top: 2.5rem !important;
+      right: 2rem;
+    }
+  }
   .skills-container {
     height: auto;
     flex-direction: column;

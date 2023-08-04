@@ -18,6 +18,16 @@
   }
 }
 
+.scrollsvg{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 2rem;
+  left: 30%;
+  fill: var(--color);
+  visibility: hidden;
+}
+
 .pro-container {
   height: 100%;
   display: flex;
@@ -119,6 +129,11 @@
       }
     }
   }
+  .scrollsvg{
+    visibility: visible;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 40em) {
@@ -136,6 +151,11 @@
   }
   .yinyang {
     width: 50px;
+  }
+  .scrollsvg{
+    visibility: visible;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -156,6 +176,22 @@
       p:not(:first-child) {
         margin-top: 3vw;
       }
+    }
+  }
+}
+
+@media (max-width: 30em) {
+  .pro-container{
+  margin-left: 8vw;
+  }
+  .card {
+    height: 30vh;
+    width: 12rem;
+  }
+  .pro-page {
+    .back {
+      top: 2.5rem !important;
+      right: 2rem;
     }
   }
 }

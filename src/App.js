@@ -12,7 +12,7 @@ function App() {
   };
   return (
     <div>
-      <Routes theme={isDarkTheme} handleTheme={handleTheme} /> <Cursor />
+      <Routes theme={!isDarkTheme} handleTheme={handleTheme} /> <Cursor />
     </div>
   );
 }

@@ -85,9 +85,9 @@ const Skills = ({ theme, handleTheme }) => {
               </div>
             </div>
             <div className="description">
-              Le frontend est mon terrain de jeu créatif où je peux donner vie
-              aux idées et créer des interfaces élégantes, interactives et
-              conviviales.
+              J'adore le frontend car les résultats sont immédiatement visibles.
+              J'adore donner vie aux idées et créer des interfaces élégantes et
+              interactives.
             </div>
             <div className="comp">
               <h2>SKILLS :</h2>

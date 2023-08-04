@@ -124,7 +124,7 @@ const Home = ({ theme, handleTheme }) => {
       </div>
       <div className={click ? "middle click" : "middle notClick"}>
         <FaChessBoard onClick={(e) => setClick(!click)} />
-        <span>Clique ici</span>
+        <span onClick={(e) => setClick(!click)} >Clique ici</span>
       </div>
       {click ? <Me click={click} /> : null}
     </motion.div>

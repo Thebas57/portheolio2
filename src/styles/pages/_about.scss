@@ -90,8 +90,24 @@
 }
 
 @media (max-width: 30em) {
-  .about-page{
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(50px) translateX(0px);
+    }
+  }
+  .about-page {
     width: auto;
+    .piano{
+      right: 1rem;
+    }
+    .back {
+      top: 2.5rem !important;
+      right: 2rem;
+    }
   }
   .about-container {
     .about-theo {
@@ -103,9 +119,5 @@
       font-style: italic;
       transform: translateX(-2vw);
     }
-  }
-  .back{
-    top: 2.5rem !important;
-    right: 2rem;
   }
 }
