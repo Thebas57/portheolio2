@@ -7,19 +7,19 @@
 .skills-fix {
   overflow-y: scroll !important;
   position: relative;
-  height: 96vh;
+  height: 96dvh;
   padding: 2rem 2rem 0 2rem;
 }
 
 .skills-container {
-  height: 100vh;
+  height: 100dvh;
   position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   .skill {
     width: 30vw;
-    height: 60vh;
+    height: 60dvh;
     z-index: 10;
     // border: 2px solid var(--back-color);
     border: 2px solid var(--color);
@@ -70,7 +70,7 @@
 
 .back {
   position: fixed;
-  top: 45vh;
+  top: 45dvh;
   font-size: 2rem;
   transition: all 0.2s ease;
   z-index: 5;

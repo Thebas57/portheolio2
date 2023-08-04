@@ -1,5 +1,5 @@
 .pro-page {
-  height: 96vh;
+  height: 96dvh;
   padding: 2rem 2rem 0 2rem;
   position: relative;
   background-color: var(--back-color);
@@ -9,7 +9,7 @@
 
 .back {
   position: fixed;
-  top: 45vh;
+  top: 45dvh;
   font-size: 2rem;
   transition: all 0.2s ease;
   z-index: 5;
@@ -39,7 +39,7 @@
 
 .card {
   position: relative;
-  height: 25vh;
+  height: 25dvh;
   border: 1px solid var(--color);
   width: 19rem;
   margin-right: 10rem;
@@ -118,7 +118,7 @@
 
 @media (max-width: 50em) {
   .card {
-    height: 26vh;
+    height: 26dvh;
     width: 16rem;
   }
   .back-content {
@@ -138,7 +138,7 @@
 
 @media (max-width: 40em) {
   .card {
-    height: 32vh;
+    height: 32dvh;
     width: 11rem;
   }
   .back-content {
@@ -161,7 +161,7 @@
 
 @media (max-width: 40em) {
   .card {
-    height: 34vh;
+    height: 34dvh;
     width: 9rem;
   }
   .back-content {
@@ -185,7 +185,7 @@
   margin-left: 8vw;
   }
   .card {
-    height: 30vh;
+    height: 30dvh;
     width: 12rem;
   }
   .pro-page {

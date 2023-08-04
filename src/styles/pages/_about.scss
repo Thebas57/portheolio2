@@ -1,5 +1,5 @@
 .about-page {
-  height: 96vh;
+  height: 96dvh;
   width: 100vw;
   padding: 2rem 2rem 0 2rem;
   position: relative;
@@ -36,7 +36,7 @@
 
 .back {
   position: fixed;
-  top: 45vh;
+  top: 45dvh;
   font-size: 2rem;
   transition: all 0.2s ease;
   z-index: 5;
@@ -58,7 +58,7 @@
     justify-content: space-around;
     padding: 1rem;
     width: 50vw;
-    height: 60vh;
+    height: 60dvh;
     margin-left: 10vw;
     line-height: 1.5;
     font-family: $font-5;
@@ -83,7 +83,7 @@
   .about-container {
     .about-theo {
       width: 70vw;
-      height: 60vh;
+      height: 60dvh;
       backdrop-filter: none !important;
     }
   }
@@ -112,7 +112,7 @@
   .about-container {
     .about-theo {
       width: 60vw;
-      height: 65vh;
+      height: 65dvh;
       line-height: 1.5;
       font-family: $font-5;
       font-size: calc(0.6rem + 1vw);

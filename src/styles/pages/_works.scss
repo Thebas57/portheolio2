@@ -5,7 +5,7 @@
 .works {
   overflow-y: scroll !important;
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   padding: 2rem 2rem 0 2rem;
 }
 
@@ -26,7 +26,7 @@
 
 .back {
   position: fixed;
-  top: 45vh;
+  top: 45dvh;
   font-size: 2rem;
   transition: all 0.2s ease;
   &:hover {

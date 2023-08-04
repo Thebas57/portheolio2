@@ -1,7 +1,7 @@
 .me-container {
   width: 70%;
   border: 3px solid;
-  height: 50vh;
+  height: 50dvh;
   position: relative;
   top: 50%;
   left: 50%;
@@ -38,7 +38,7 @@
     img {
       position: absolute;
       bottom: 0;
-      height: 60vh;
+      height: 60dvh;
       left: 50%;
       transform: translate(-50%, 0); // pour bien le centrer
     }
@@ -62,7 +62,7 @@
       transform: translateY(2vh);
       img {
         z-index: -1;
-        height: 45vh;
+        height: 45dvh;
       }
     }
   }
@@ -82,7 +82,7 @@
       width: 100%;
       transform: translateY(1.8vh);
       img {
-        height: 40vh;
+        height: 40dvh;
       }
     }
   }
@@ -107,7 +107,7 @@
       width: 100%;
       transform: translateY(1.1vh);
       img {
-        height: 25vh;
+        height: 25dvh;
       }
     }
   }
