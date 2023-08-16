@@ -61,7 +61,6 @@ const Pro = ({ theme, handleTheme }) => {
     //fonction rotate yinyang
     const rotate = () => {
       let rot = ref.current.scrollLeft;
-      console.log(rot);
       refYy.current.style.transform = `rotate(` + -rot + `deg)`;
     };
 
@@ -82,8 +81,8 @@ const Pro = ({ theme, handleTheme }) => {
 
     return () => {
       window.removeEventListener("wheel", handleMouseWheel);
-      if (isMobile) window.addEventListener("touchmove", rotate);
-      else window.addEventListener("wheel", rotate);
+      if (isMobile) window.removeEventListener("touchmove", rotate);
+      else window.removeEventListener("wheel", rotate);
     };
   });
 
@@ -156,6 +155,7 @@ const Pro = ({ theme, handleTheme }) => {
             id="Layer_1"
             viewBox="0 0 512.001 512.001"
             className="scrollsvg"
+            onClick={(e) => alert("Fais glisser les cartes vers la droite.\nTu peux aussi cliquer sur les cartes pour y voir plus d'informations !")}
           >
             <g transform="translate(0 -1)">
               <g>

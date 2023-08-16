@@ -49,7 +49,6 @@ const Cursor = () => {
 
     animeCircle();
 
-    console.log("AnimeCircle");
   });
 
   return <div id="trail-cursor" data-circle="1"></div>;

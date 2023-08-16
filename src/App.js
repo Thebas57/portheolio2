@@ -8,7 +8,6 @@ function App() {
 
   const handleTheme = () => {
     setIsDarkTheme(!isDarkTheme);
-    console.log(isDarkTheme);
   };
   return (
     <div>

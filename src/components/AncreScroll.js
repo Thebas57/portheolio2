@@ -19,7 +19,6 @@ const AncreScroll = (props) => {
       if (scrollPosition > 5) hiddenRef.current.style.display = "none";
       else hiddenRef.current.style.display = "block";
 
-      console.log(scrollPosition, windowSize, bodyHeight);
     };
 
     test.addEventListener("scroll", handleScroll);
