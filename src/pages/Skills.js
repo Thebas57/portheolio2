@@ -65,7 +65,7 @@ const Skills = ({ theme, handleTheme }) => {
             <div className="comp">
               <h2>FRAMEWORKS :</h2>
               <ul>
-                <li>Laravel, Slim, Twig</li>
+                <li>Symfony, Slim, Twig</li>
                 <li>ExpressJS, Axios, Redux</li>
               </ul>
             </div>

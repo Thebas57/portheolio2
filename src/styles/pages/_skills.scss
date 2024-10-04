@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
   .skill {
     width: 30vw;
     height: 60dvh;
@@ -30,36 +31,44 @@
     flex-direction: column;
     justify-content: space-between;
     backdrop-filter: blur(4px);
+
     svg {
       font-size: 2rem;
       margin-right: 5px;
     }
+
     .titre {
       display: flex;
       justify-content: center;
       align-items: center;
+
       div {
         display: flex;
         justify-content: center;
         align-items: center;
       }
     }
+
     h1 {
       margin: auto;
       font-size: 2.2rem;
     }
+
     .description {
       font-size: calc(0.4em + 1vw);
     }
+
     .comp {
       h1 {
         font-size: calc(1em + 1vw);
       }
+
       ul {
         margin-left: 2rem;
         font-size: calc(0.6em + 1vw);
       }
     }
+
     &:hover {
       background-color: var(--color);
       color: var(--back-color);
@@ -74,8 +83,35 @@
   font-size: 2rem;
   transition: all 0.2s ease;
   z-index: 5;
+
   &:hover {
     font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+  /* Styles pour les ordinateurs portables */
+  .skill {
+    line-height: 1 !important;
+
+    h1 {
+      font-size: calc(1.5em + 1vw) !important;
+    }
+
+    .comp {
+      h2 {
+        font-size: calc(0.7em + 1vw) !important;
+      }
+
+      ul {
+        font-size: calc(0.4em + 1vw) !important;
+      }
+    }
+  }
+
+  .description {
+    font-size: calc(0.5em + 1vw) !important;
   }
 }
 
@@ -85,22 +121,27 @@
     height: auto;
     flex-direction: column;
     margin-top: 10vw;
+
     .skill {
       width: 50vw;
       height: max-content;
       backdrop-filter: blur(4px);
       margin-bottom: 5rem;
+
       h1 {
         margin: auto;
         font-size: 2.2rem;
       }
+
       .description {
         font-size: calc(0.8em + 1vw);
       }
+
       .comp {
         h1 {
           font-size: calc(1em + 2vw);
         }
+
         ul {
           margin-left: 2rem;
           font-size: calc(0.8em + 1vw);
@@ -118,26 +159,32 @@
       right: 2rem;
     }
   }
+
   .skills-container {
     height: auto;
     flex-direction: column;
     margin-top: 19vw;
+
     .skill {
       width: 60vw;
       height: max-content;
       backdrop-filter: blur(4px);
       margin-bottom: 2rem;
+
       h1 {
         margin: auto;
         font-size: 2.2rem;
       }
+
       .description {
         font-size: calc(0.8em + 1vw);
       }
+
       .comp {
         h1 {
           font-size: calc(1em + 2vw);
         }
+
         ul {
           margin-left: 2rem;
           font-size: calc(0.8em + 1vw);
