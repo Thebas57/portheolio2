@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "name": "App météo",
+        "languages": [
+            "ReactJS",
+            "SCSS",
+            "Axios"
+        ],
+        "source": "https://github.com/Thebas57/app-meteo",
+        "info": "Dans ce projet, vous pouvez rechercher une ville spécifique et obtenir les données météorologiques telles que la température, la sensation thermique, la pression atmosphérique, l'humidité, et plus encore.",
+        "picture": "./portheolio2/img/projets/meteo.png",
+        "tri": "Backend/Frontend"
+    },
+    {
+        "id": 2,
+        "name": "Twotter",
+        "languages": [
+            "ReactJS",
+            "SCSS",
+            "MongoDB",
+            "Redux"
+        ],
+        "source": "https://github.com/Thebas57/MernProject",
+        "info": "Il s'agit d'une application qui fonctionne sur le même principe que Twitter.",
+        "picture": "./portheolio2/img/projets/twotter.png",
+        "tri": "Backend/Redux"
+    },
+    {
+        "id": 3,
+        "name": "Translate Quizz",
+        "languages": [
+            "ReactJS",
+            "SCSS",
+            "Redux",
+            "ExpressJS"
+        ],
+        "source": "https://github.com/Thebas57/TranslateQuizz",
+        "info": "Cette application vous offre la possibilité d'enregistrer des mots ainsi que leurs traductions. Ensuite, elle propose un quiz pour vous permettre d'apprendre ces traductions de manière simple et efficace.",
+        "picture": "./portheolio2/img/projets/translatequizz.png",
+        "tri": "Backend/Redux"
+    },
+    {
+        "id": 4,
+        "name": "Librairie",
+        "languages": [
+            "ReactJS",
+            "SCSS",
+            "Express",
+            "Redux"
+        ],
+        "source": "https://github.com/Thebas57/Librairie",
+        "info": "Il s'agit d'une bibliothèque qui vous permet de modifier, ajouter et supprimer vos documents. Les images sont générées aléatoirement à chaque fois que vous actualisez la page.",
+        "picture": "./portheolio2/img/projets/librairie.png",
+        "tri": "Backend/Frontend"
+    },
+    {
+        "id": 5,
+        "name": "CV React",
+        "languages": [
+            "ReactJS",
+            "SCSS"
+        ],
+        "source": "https://github.com/Thebas57/CVReact",
+        "info": "J'ai créé mon CV interactif avec React. Il propose une mise en page dynamique pour présenter mes compétences et expériences.",
+        "picture": "./portheolio2/img/projets/cvreact.png",
+        "tri": "Frontend"
+    },
+    {
+        "id": 6,
+        "name": "Infinite Scroll",
+        "languages": [
+            "ReactJS",
+            "Axios",
+            "SCSS"
+        ],
+        "source": "https://github.com/Thebas57/infinite-scroll-books",
+        "info": "Une plateforme qui permet de rechercher des livres, avec une fonctionnalité de chargement infini pour afficher les résultats au fur et à mesure du défilement.",
+        "picture": "./portheolio2/img/projets/scrollinfini.png",
+        "tri": "Backend/Frontend"
+    },
+    {
+        "id": 7,
+        "name": "Portofolio",
+        "languages": [
+            "ReactJS",
+            "SCSS"
+        ],
+        "source": "https://github.com/Thebas57/portoflio1",
+        "info": "J'ai créé ce portfolio comprenant beaucoup d'animations afin de rendre l'expérience interactive.",
+        "picture": "./portheolio2/img/projets/portfolioespace.png",
+        "tri": "Frontend"
+    },
+    {
+        "id": 8,
+        "name": "Sport Result",
+        "languages": [
+            "ReactJS",
+            "SCSS",
+            "Axios"
+        ],
+        "source": "https://github.com/Thebas57/soho-sports",
+        "info": "Un site qui fournit des résultats pour tous les matchs de rugby, football, basket et volley. Vous avez la possibilité d'ajouter en favoris des ligues ou des équipes, ainsi que d'accéder à d'autres fonctionnalités intéressantes.",
+        "picture": "./portheolio2/img/projets/sportres.png",
+        "tri": "Backend/Frontend"
+    },
+    {
+        "id": 9,
+        "name": "Menu restaurant",
+        "languages": [
+            "SCSS"
+        ],
+        "source": "https://github.com/Thebas57/menu-resto-1",
+        "info": "Un superbe design de carte de restaurant trouvé sur Figma.",
+        "picture": "./portheolio2/img/projets/menu.png",
+        "tri": "Frontend"
+    },
+    {
+        "id": 10,
+        "name": "Lyriks",
+        "languages": [
+            "ReactJS",
+            "SCSS",
+            "Axios",
+            "Redux"
+        ],
+        "source": "https://github.com/Thebas57/music-app",
+        "info": "Une application musicale similaire à Deezer, dont le design et le concept sont inspirés de Javascript Master sur YouTube.",
+        "picture": "./portheolio2/img/projets/lyriks.png",
+        "tri": "Backend/Redux"
+    },
+    {
+        "id": 11,
+        "name": "Menu interactif",
+        "languages": [
+            "ReactJS",
+            "SCSS"
+        ],
+        "source": "https://github.com/Thebas57/animation-ul",
+        "info": "Un menu interactif avec des animations qui réagissent également au défilement de la page.",
+        "picture": "./portheolio2/img/projets/menuinteractif.png",
+        "tri": "Frontend"
+    },
+    {
+        "id": 12,
+        "name": "Lampe shop",
+        "languages": [
+            "ReactJS",
+            "SCSS"
+        ],
+        "source": "https://github.com/Thebas57/lampe-shop",
+        "info": "Un magnifique design découvert sur Figma qui présente des interactions et animations pour afficher les lampes et leurs caractéristiques de manière dynamique.",
+        "picture": "./portheolio2/img/projets/lampeshop.png",
+        "tri": "Frontend"
+    }
+]

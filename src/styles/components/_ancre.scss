@@ -1,0 +1,37 @@
+.ancre-container {
+  position: relative;
+}
+
+.preAncre {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slide {
+  position: fixed;
+  top: 0;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-100%);
+}
+
+.chaine {
+  rotate: (135deg);
+  fill: var(--color) !important;
+}
+
+.ancre {
+  fill: var(--color) !important;
+}
+
+@media (max-width: 30em) {
+  .preAncre {
+    right: 1.7rem;
+  }
+  .slide{
+    right: 1rem;
+  }
+}

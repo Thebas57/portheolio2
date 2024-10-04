@@ -1,0 +1,292 @@
+// Pour garder la bonne couleur sur les navlinks
+a {
+  color: inherit;
+}
+
+.home {
+  width: 100vw;
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-top {
+  position: fixed;
+  font-size: 3rem;
+  left: 50%;
+  top: 2rem;
+  transform: translate(-54%, 0); // pour bien le centrer
+  z-index: 10;
+  svg {
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.7s ease;
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.logo {
+  font-family: $font-4;
+  font-size: 2rem;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 60px;
+}
+
+.contact {
+  position: absolute;
+  top: 2.8rem;
+  right: calc(2rem + 4vw);
+  letter-spacing: 0.7px;
+  font-family: $font-1;
+  h4 {
+    cursor: pointer;
+  }
+}
+
+.skills {
+  position: absolute;
+  top: 50dvh;
+  right: calc(2rem + 5vw);
+  letter-spacing: 0.7px;
+  font-family: $font-1;
+  transform: rotate(90deg) translate(-50%, -50%) !important;
+  transition: transform 0.4s ease-in-out;
+  h4 {
+    cursor: pointer;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  svg {
+    transform: rotate(-90deg);
+    font-size: 2rem;
+    padding-right: 30px;
+    cursor: pointer;
+  }
+}
+
+.socialHome {
+  position: absolute;
+  left: calc(1rem + 1.3vw);
+}
+
+.projets {
+  position: absolute;
+  top: 50dvh;
+  left: calc(1rem + 4vw);
+  letter-spacing: 0.7px;
+  font-family: $font-1;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  svg {
+    transform: rotate(90deg);
+    font-size: 2rem;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  h4 {
+    cursor: pointer;
+  }
+}
+
+.moi {
+  position: absolute;
+  bottom: 2rem;
+  width: 100vw;
+  letter-spacing: 0.7px;
+  font-family: $font-1;
+  display: flex;
+  justify-content: space-evenly;
+  height: min-content;
+  h4 {
+    cursor: pointer;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    svg {
+      cursor: pointer;
+      font-size: 2rem;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.moi > div:hover {
+  h4 {
+    font-size: 1.1rem !important;
+  }
+}
+
+.middle {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.8s ease;
+  svg {
+    cursor: pointer;
+    border: 3px solid;
+    animation: rotate-infinite 10s infinite linear;
+  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  span {
+    padding-top: 40px;
+    font-size: 1rem;
+  }
+}
+
+.click {
+  top: 90%;
+  left: 90%;
+  svg {
+    height: 1em;
+    width: 1em;
+  }
+  span {
+    display: none;
+  }
+}
+.notClick {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  svg {
+    height: 1.5em;
+    width: 1.5em;
+  }
+}
+
+@keyframes rotate-infinite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact:hover,
+.skills:hover,
+.projets:hover,
+.moi > div:hover {
+  h4 {
+    font-size: 1.1rem;
+  }
+}
+
+.contact h4,
+.skills h4,
+.projets h4,
+.moi > div h4 {
+  transition: all 0.3s ease-out;
+}
+
+@media (max-width: 1024px) {
+  .skills {
+    right: calc(2rem + 6vw);
+  }
+  .projets {
+    left: calc(1rem + 6vw);
+  }
+}
+
+@media (max-width: 50rem) {
+  .click{
+    top: 88%;
+    left: 88%;
+  }
+  .click svg {
+    height: 80px;
+    width: 80px;
+  }
+  .middle svg {
+    border: 2px solid;
+  }
+  .skills {
+    right: calc(2rem + 8vw);
+  }
+  .projets {
+    left: calc(1rem + 8vw);
+  }
+  .moi {
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .click{
+    top: 85%;
+  }
+  .click svg {
+    height: 40px;
+    width: 40px;
+  }
+  .middle svg {
+    border: 1px solid;
+  }
+  .contact,
+  .skills,
+  .projets,
+  .moi > div {
+    h4 {
+      font-size: 0.9rem;
+    }
+  }
+  .skills {
+    right: calc(3rem + 8vw);
+  }
+  .projets {
+    left: calc(2rem + 8vw);
+  }
+  .notClick svg {
+    height: 1em;
+    width: 1em;
+  }
+  .contact {
+    right: calc(1rem + 0.8vw);
+  }
+}
+
+@media (max-width: 25rem) {
+  .moi {
+    bottom: 0.2rem;
+    div {
+      width: 7rem;
+    }
+  }
+  .contact,
+  .skills,
+  .projets,
+  .moi > div {
+    h4 {
+      font-size: 0.7rem;
+    }
+  }
+  .skills {
+    right: calc(3rem + 8vw);
+  }
+  .projets {
+    left: calc(2rem + 8vw);
+  }
+  .notClick svg {
+    height: 1em;
+    width: 1em;
+  }
+  .contact {
+    right: calc(1rem + 0.8vw);
+  }
+}
