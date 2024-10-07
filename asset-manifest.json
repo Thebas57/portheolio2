@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portheolio2/static/css/main.cb372bcd.css",
-    "main.js": "/portheolio2/static/js/main.3af0fe00.js",
+    "main.css": "/portheolio2/static/css/main.ee4d2809.css",
+    "main.js": "/portheolio2/static/js/main.75ff2d9d.js",
     "static/media/blog.jpg": "/portheolio2/static/media/blog.12a176a23a8bc3816ecb.jpg",
     "static/media/blog-blanc.avif": "/portheolio2/static/media/blog-blanc.bc55df1286da7042b9e9.avif",
     "index.html": "/portheolio2/index.html",
-    "main.cb372bcd.css.map": "/portheolio2/static/css/main.cb372bcd.css.map",
-    "main.3af0fe00.js.map": "/portheolio2/static/js/main.3af0fe00.js.map"
+    "main.ee4d2809.css.map": "/portheolio2/static/css/main.ee4d2809.css.map",
+    "main.75ff2d9d.js.map": "/portheolio2/static/js/main.75ff2d9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb372bcd.css",
-    "static/js/main.3af0fe00.js"
+    "static/css/main.ee4d2809.css",
+    "static/js/main.75ff2d9d.js"
   ]
 }
