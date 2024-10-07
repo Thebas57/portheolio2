@@ -13,12 +13,13 @@
   font-size: 2rem;
   transition: all 0.2s ease;
   z-index: 5;
+
   &:hover {
     font-size: 2.2rem;
   }
 }
 
-.scrollsvg{
+.scrollsvg {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -26,6 +27,21 @@
   left: 30%;
   fill: var(--color);
   visibility: hidden;
+}
+
+.scrollsvgOrdi {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+  position: fixed;
+  bottom: 2rem;
+  left: 10vw;
+  fill: var(--color);
 }
 
 .pro-container {
@@ -53,15 +69,11 @@
   flex-direction: column;
   align-items: center;
   font-family: $font-1;
-  perspective: 1000px; /* Ajout de la perspective pour l'effet 3D */
-  transform-style: preserve-3d; /* Permet à l'élément d'afficher les éléments 3D enfants en 3D */
-  transition-delay: 0.2s; /* Ajoutez un délai de 0.2s avant que l'effet de retournement ne se produise */
-  &:hover {
-    background-color: var(--back-color);
-    color: var(--color);
-    cursor: pointer;
-    transform: rotateY(180deg);
-  }
+  perspective: 1000px;
+  /* Ajout de la perspective pour l'effet 3D */
+  transform-style: preserve-3d;
+  /* Permet à l'élément d'afficher les éléments 3D enfants en 3D */
+  cursor: pointer;
 }
 
 .card .front,
@@ -78,7 +90,19 @@
   backface-visibility: hidden;
 }
 
+.front {
+  z-index: 2;
+  /* Donne une priorité d'affichage plus haute à la face avant */
+  transform: rotateY(0deg);
+  /* Assure la face avant normale */
+}
+
 .backcard {
+  transform: rotateY(180deg);
+}
+
+/* Ajoute la classe flipped lorsqu'on clique sur la carte */
+.card.flipped {
   transform: rotateY(180deg);
 }
 
@@ -89,15 +113,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
   hr {
     width: 80%;
   }
+
   .description {
     display: flex;
     justify-content: space-between;
     width: 100%;
     flex-direction: column;
     height: auto;
+
     p:not(:first-child) {
       margin-top: 20px;
     }
@@ -121,18 +148,38 @@
     height: 26dvh;
     width: 16rem;
   }
+
   .back-content {
     .description {
       font-size: calc(0.5em + 1vw);
+
       p:not(:first-child) {
         margin-top: 1vw;
       }
     }
   }
-  .scrollsvg{
+
+  .scrollsvg {
     visibility: visible;
     width: 100px;
     height: 100px;
+  }
+
+  .scrollsvgOrdi {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+  .back-content {
+    .description {
+      font-size: calc(0.2em + 1vw) !important;
+
+      p:not(:first-child) {
+        margin-top: 1vw;
+      }
+    }
   }
 }
 
@@ -141,21 +188,29 @@
     height: 32dvh;
     width: 11rem;
   }
+
   .back-content {
     .description {
       font-size: calc(0.6em + 1vw);
+
       p:not(:first-child) {
         margin-top: 3vw;
       }
     }
   }
+
   .yinyang {
     width: 50px;
   }
-  .scrollsvg{
+
+  .scrollsvg {
     visibility: visible;
     width: 50px;
     height: 50px;
+  }
+
+  .scrollsvgOrdi {
+    visibility: hidden;
   }
 }
 
@@ -164,15 +219,19 @@
     height: 34dvh;
     width: 9rem;
   }
+
   .back-content {
     h1 {
       font-size: calc(1.5em + 1vw);
     }
+
     h3 {
       font-size: calc(0.7em + 1vw);
     }
+
     .description {
       font-size: calc(0.6em + 1vw);
+
       p:not(:first-child) {
         margin-top: 3vw;
       }
@@ -181,13 +240,15 @@
 }
 
 @media (max-width: 30em) {
-  .pro-container{
-  margin-left: 8vw;
+  .pro-container {
+    margin-left: 8vw;
   }
+
   .card {
     height: 30dvh;
     width: 12rem;
   }
+
   .pro-page {
     .back {
       top: 2.5rem !important;

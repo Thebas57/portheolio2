@@ -1,9 +1,17 @@
 {
     "pro": [
         {
+            "id": 0,
+            "type": "experience",
+            "date": "Février 2024 - Aujourd'hui ",
+            "lieu": "Rectorat Nancy Metz",
+            "libelle": "Développeur informatique",
+            "description": "Développement d'une application déployée dans toutes les académies de France. <br/> Gestion et optimisation des bases de données. (MySQL, PostgreSQL, etc.) <br/> Migration de Symfony 3 vers Symfony 6."
+        },
+        {
             "id": 1,
             "type": "experience",
-            "date": "Septembre 2020 - 2022 ",
+            "date": "Septembre 2020 - 2023 ",
             "lieu": "Chrono-Caisse",
             "libelle": "Développeur web en CDI",
             "description": "Ajout et amélioration de fonctionnalités sur l'application Chrono-Caisse <br/> Support client <br/> Développement de plusieurs APIs pour communiquer avec les différents sites e-commerce (Prestashop, Woocommerce)"
