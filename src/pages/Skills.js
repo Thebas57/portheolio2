@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { MdDeveloperMode } from "react-icons/md";
-import Particle from "../components/Particle";
+import Particle from "../components/Particles/Particle";
 import BigTitle from "../components/BigTitle";
 import { motion } from "framer-motion";
 

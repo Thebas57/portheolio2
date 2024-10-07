@@ -1,10 +1,10 @@
 import React, { useCallback } from "react";
-import configDark from "../particles/particlesjs-config.json";
-import configLight from "../particles/particlesjs-config-light.json";
+import configDark from "../../particles/particlesjs-config.json";
+import configLight from "../../particles/particles-piano-light.json";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
-const Particle = ({ theme, handleTheme }) => {
+const PianoParticle = ({ theme, handleTheme }) => {
   const particlesInit = useCallback(async (engine) => {
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -13,7 +13,7 @@ const Particle = ({ theme, handleTheme }) => {
     await loadSlim(engine);
   }, []);
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    //await console.log(container);
   }, []);
 
   return (
@@ -22,10 +22,10 @@ const Particle = ({ theme, handleTheme }) => {
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
-        params={theme ? configLight : configDark}
+        options={theme ? configLight : configDark}
       />
     </div>
   );
 };
 
-export default Particle;
+export default PianoParticle;

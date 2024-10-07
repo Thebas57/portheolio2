@@ -5,7 +5,7 @@ import Socials from "../components/Socials";
 import { NavLink } from "react-router-dom";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { GiGrandPiano } from "react-icons/gi";
-import PianoParticle from "../components/PianoParticle";
+import PianoParticle from "../components/Particles/PianoParticle";
 import BigTitle from "../components/BigTitle";
 import { motion } from "framer-motion";
 
